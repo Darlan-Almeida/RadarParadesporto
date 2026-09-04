@@ -62,28 +62,6 @@ flowchart LR
    - Cards detalhados com: nome do projeto, descrição, modalidades esportivas, deficiências atendidas, endereço, formas de contato com links diretos (`tel:`, `mailto:`, `https://`), badge de gratuidade e link da fonte oficial.
    - Breadcrumb: `Brasil > [Estado] > [Município]`.
 
----
-
-## 📋 Dados Iniciais Reais (Seed Data do MVP)
-
-O MVP é populado com **10 iniciativas reais** distribuídas por 4 macrorregiões do Brasil:
-
-| # | Iniciativa | Município/UF | Modalidades Principais | Gratuidade | Fonte Oficial |
-|---|---|---|---|---|---|
-| 1 | **ADD — Associação Desportiva para Deficientes** | São Paulo/SP | Basquete CR, Atletismo, Natação, Bocha, Vôlei sentado | Gratuito | [add.org.br](https://add.org.br) |
-| 2 | **ADD Escola CESPRO** | São Caetano do Sul/SP | Iniciação esportiva adaptada, Bocha, Atletismo | Gratuito | [add.org.br](https://add.org.br) |
-| 3 | **Instituto Athlon** | São José dos Campos/SP | Atletismo, Natação, Parabadminton, Goalball, Bocha | Gratuito | [institutoathlon.org.br](https://institutoathlon.org.br) |
-| 4 | **ADDF — Assoc. Desp. Deficientes Físicos** | Recife/PE | Basquete em cadeira de rodas, Atletismo, Tênis de mesa | Gratuito | [cbtm.org.br](https://cbtm.org.br) |
-| 5 | **AAPPD** | Recife/PE | Atletismo, Tênis de mesa, Natação | Gratuito | [cbtm.org.br](https://cbtm.org.br) |
-| 6 | **APC — Assoc. Pernambucana de Cegos** | Recife/PE | Handebol para cegos, Goalball, Futebol de 5 | Gratuito | [cbtm.org.br](https://cbtm.org.br) |
-| 7 | **APEBH** | Belo Horizonte/MG | Natação, Atletismo, Bocha, Halterofilismo | Gratuito | [apebh.org.br](https://apebh.org.br) |
-| 8 | **CDDU** | Uberlândia/MG | Esporte adaptado, Halterofilismo paralímpico, Bocha | Gratuito | [ande.org.br](https://ande.org.br) |
-| 9 | **ASASEPODE** | Porto Alegre/RS | Bocha paralímpica (todas as classes funcionais) | Gratuito | [ande.org.br](https://ande.org.br) |
-| 10 | **Clube Roda Solta** | Itajaí/SC | Esporte adaptado, Basquete CR, Atletismo, Bocha | Gratuito | [ande.org.br](https://ande.org.br) |
-
-> ⚠️ **Nota Institucional**: Os dados acima são provenientes de registros e reportagens públicas. Para um ambiente de produção final, cada organização deve ser contatada para confirmação periódica de vagas, turmas e documentação.
-
----
 
 ## 📁 Estrutura de Pastas
 
