@@ -9,7 +9,7 @@ import {
   useUFSummary,
 } from '@/hooks/useIniciativas';
 import { UFS_BRASIL } from '@/lib/constants';
-import { Map, List, Building2, Award, ArrowLeft, PlusCircle } from 'lucide-react';
+import { Map, List, Building2, ArrowLeft, Plus } from 'lucide-react';
 
 interface StateViewProps {
   uf: string;
@@ -24,7 +24,7 @@ export function StateView({
   onGoBack,
   onOpenRegister,
 }: StateViewProps) {
-  const { data: municipios = [], isLoading: isLoadingMunis } = useMunicipiosByUF(uf);
+  const { data: municipios = [] } = useMunicipiosByUF(uf);
   const { data: esportes = [] } = useEsportesByUF(uf);
   const { data: ufSummary } = useUFSummary(uf);
   const [highlightedMuni, setHighlightedMuni] = useState<string | null>(null);
@@ -38,31 +38,29 @@ export function StateView({
   };
 
   return (
-    <div className="space-y-4 sm:space-y-6">
+    <div className="space-y-6">
       {/* Banner / Header do Estado */}
-      <div className="bg-white rounded-2xl border border-slate-200 p-4 sm:p-6 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div className="flex items-start gap-3 sm:gap-4">
-          <div className="w-12 h-12 rounded-xl bg-teal-800 text-white font-bold text-xl flex items-center justify-center shadow-xs flex-shrink-0">
+      <div className="bg-white rounded-lg border border-slate-200 p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div className="flex items-center gap-3.5">
+          <div className="w-10 h-10 rounded-md bg-[#0f2d4a] text-white font-bold text-base flex items-center justify-center flex-shrink-0">
             {uf}
           </div>
           <div>
             <div className="flex items-center gap-2 flex-wrap">
-              <h1 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
+              <h1 className="text-xl font-bold text-slate-900 tracking-tight">
                 {ufInfo.nome}
               </h1>
-              <span className="text-xs bg-slate-100 text-slate-700 font-semibold px-2.5 py-0.5 rounded-full border border-slate-200">
+              <span className="text-xs bg-slate-100 text-slate-600 font-medium px-2 py-0.5 rounded-md border border-slate-200">
                 Região {ufInfo.regiao}
               </span>
             </div>
-            <p className="text-xs sm:text-sm text-slate-600 mt-1 flex items-center gap-3 flex-wrap">
-              <span className="flex items-center gap-1">
-                <Building2 className="w-3.5 h-3.5 text-teal-700" />
+            <p className="text-xs text-slate-600 mt-0.5 flex items-center gap-3 flex-wrap">
+              <span>
                 <strong>{municipios.length}</strong>{' '}
-                {municipios.length === 1 ? 'município com polo' : 'municípios com polos'}
+                {municipios.length === 1 ? 'município atrito' : 'municípios com polos'}
               </span>
               <span>•</span>
-              <span className="flex items-center gap-1">
-                <Award className="w-3.5 h-3.5 text-teal-700" />
+              <span>
                 <strong>{ufSummary?.totalIniciativas || 0}</strong>{' '}
                 {ufSummary?.totalIniciativas === 1
                   ? 'iniciativa cadastrada'
@@ -76,52 +74,52 @@ export function StateView({
           <button
             type="button"
             onClick={onGoBack}
-            className="inline-flex items-center gap-1.5 text-xs sm:text-sm text-slate-700 bg-slate-100 hover:bg-slate-200 font-medium px-3 py-2 rounded-lg transition-functional"
+            className="inline-flex items-center gap-1.5 text-xs text-slate-700 bg-slate-100 hover:bg-slate-200 font-medium px-3 py-1.5 rounded-md border border-slate-300 transition-colors"
           >
-            <ArrowLeft className="w-4 h-4" />
-            <span>Voltar ao Mapa do Brasil</span>
+            <ArrowLeft className="w-3.5 h-3.5" />
+            <span>Voltar ao Brasil</span>
           </button>
           <button
             type="button"
             onClick={onOpenRegister}
-            className="inline-flex items-center gap-1.5 text-xs sm:text-sm text-white bg-teal-600 hover:bg-teal-500 font-medium px-3.5 py-2 rounded-lg shadow-xs transition-functional"
+            className="inline-flex items-center gap-1.5 text-xs text-white bg-[#0f2d4a] hover:bg-[#163a63] font-medium px-3.5 py-1.5 rounded-md transition-colors"
           >
-            <PlusCircle className="w-4 h-4" />
+            <Plus className="w-3.5 h-3.5" />
             <span>Cadastrar</span>
           </button>
         </div>
       </div>
 
       {/* Tabs para Mobile */}
-      <div className="flex md:hidden bg-slate-200/80 p-1 rounded-xl gap-1">
+      <div className="flex md:hidden bg-slate-100 p-1 rounded-md gap-1 border border-slate-200">
         <button
           type="button"
           onClick={() => setMobileTab('lista')}
-          className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-semibold transition-functional ${
+          className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-md text-xs font-medium transition-colors ${
             mobileTab === 'lista'
-              ? 'bg-white text-slate-900 shadow-xs'
+              ? 'bg-white text-slate-900 border border-slate-300 shadow-2xs font-semibold'
               : 'text-slate-600 hover:text-slate-900'
           }`}
         >
-          <List className="w-4 h-4" />
-          <span>Lista de Municípios ({municipios.length})</span>
+          <List className="w-3.5 h-3.5" />
+          <span>Municípios ({municipios.length})</span>
         </button>
         <button
           type="button"
           onClick={() => setMobileTab('mapa')}
-          className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-semibold transition-functional ${
+          className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-md text-xs font-medium transition-colors ${
             mobileTab === 'mapa'
-              ? 'bg-white text-slate-900 shadow-xs'
+              ? 'bg-white text-slate-900 border border-slate-300 shadow-2xs font-semibold'
               : 'text-slate-600 hover:text-slate-900'
           }`}
         >
-          <Map className="w-4 h-4" />
-          <span>Mapa do Estado</span>
+          <Map className="w-3.5 h-3.5" />
+          <span>Mapa</span>
         </button>
       </div>
 
       {/* Grid Lado a Lado (Desktop) / Abas (Mobile) */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
         {/* Coluna A: Mapa do Estado */}
         <div
           className={`md:col-span-6 lg:col-span-7 ${

@@ -6,7 +6,7 @@ import { useStateMunicipalitiesGeoJSON } from '@/hooks/useIniciativas';
 import { MunicipioInfo } from '@/lib/types';
 import { UFS_BRASIL } from '@/lib/constants';
 import { normalizeText } from '@/lib/utils';
-import { MapPin, ArrowRight, Layers } from 'lucide-react';
+import { MapPin, ArrowRight } from 'lucide-react';
 
 interface StateMapProps {
   uf: string;
@@ -93,9 +93,9 @@ export function StateMap({
 
   if (isLoading || !paths.length) {
     return (
-      <div className="h-[420px] bg-slate-100 rounded-2xl border border-slate-200 flex flex-col items-center justify-center text-slate-500 animate-pulse">
-        <div className="w-10 h-10 border-4 border-teal-600 border-t-transparent rounded-full animate-spin mb-3" />
-        <p className="text-xs sm:text-sm font-medium text-slate-600">
+      <div className="h-[420px] bg-slate-50 rounded-lg border border-slate-200 flex flex-col items-center justify-center text-slate-500 animate-pulse">
+        <div className="w-8 h-8 border-2 border-slate-700 border-t-transparent rounded-full animate-spin mb-2" />
+        <p className="text-xs font-medium text-slate-600">
           Carregando malha municipal de {UFS_BRASIL[uf]?.nome || uf}...
         </p>
       </div>
@@ -107,33 +107,33 @@ export function StateMap({
   return (
     <div
       ref={containerRef}
-      className="relative bg-white rounded-2xl border border-slate-200 p-4 sm:p-5 shadow-xs overflow-hidden flex flex-col justify-between"
+      className="relative bg-white rounded-lg border border-slate-200 p-4 overflow-hidden flex flex-col justify-between"
     >
       {/* Header do Mapa do Estado */}
-      <div className="flex items-center justify-between gap-2 pb-3 mb-2 border-b border-slate-100">
+      <div className="flex items-center justify-between gap-2 pb-2.5 mb-2 border-b border-slate-100">
         <div>
-          <h3 className="text-sm sm:text-base font-bold text-slate-900 flex items-center gap-2">
+          <h3 className="text-xs sm:text-sm font-bold text-slate-900 flex items-center gap-2">
             <span>Malha Municipal de {ufInfo?.nome || uf}</span>
-            <span className="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-normal">
+            <span className="text-[11px] font-normal text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200">
               {paths.length} municípios
             </span>
           </h3>
           <p className="text-xs text-slate-500 mt-0.5">
-            Municípios com projetos destacados em esmeralda.
+            Cidades com projetos destacados em azul.
           </p>
         </div>
 
-        <div className="flex items-center gap-1.5 text-xs font-medium text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/80">
-          <span className="w-2.5 h-2.5 rounded-full bg-emerald-600 shadow-xs" />
-          <span>{municipiosWithData.length} com iniciativa(s)</span>
+        <div className="flex items-center gap-1.5 text-xs font-medium text-blue-900 bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200">
+          <span className="w-2 h-2 rounded-full bg-blue-600" />
+          <span>{municipiosWithData.length} com polos</span>
         </div>
       </div>
 
       {/* SVG do Estado */}
-      <div className="relative flex items-center justify-center min-h-[380px]">
+      <div className="relative flex items-center justify-center min-h-[360px]">
         <svg
           viewBox={`0 0 ${width} ${height}`}
-          className="w-full max-w-[500px] h-auto select-none"
+          className="w-full max-w-[480px] h-auto select-none"
           role="region"
           aria-label={`Mapa dos municípios de ${ufInfo?.nome || uf}`}
         >
@@ -146,24 +146,24 @@ export function StateMap({
               const isExternalHighlight =
                 highlightedMunicipio && normalizeText(highlightedMunicipio) === normNome;
 
-              let fill = '#f8fafc'; // slate-50
-              let stroke = '#475569'; // slate-600 - bordas nítidas e bem visíveis
-              let strokeWidth = 0.9;
+              let fill = '#f8fafc';
+              let stroke = '#64748b';
+              let strokeWidth = 0.8;
 
               if (hasData) {
-                fill = '#059669'; // emerald-600
-                stroke = '#064e3b'; // emerald-900
-                strokeWidth = 1.4;
+                fill = '#2563eb';
+                stroke = '#1e3a8a';
+                strokeWidth = 1.2;
 
                 if (isHovered || isExternalHighlight) {
-                  fill = '#0d9488'; // teal-600
-                  stroke = '#042f2e';
-                  strokeWidth = 2.4;
+                  fill = '#1d4ed8';
+                  stroke = '#0f2a4a';
+                  strokeWidth = 2;
                 }
               } else if (isHovered) {
                 fill = '#e2e8f0';
                 stroke = '#0f172a';
-                strokeWidth = 1.6;
+                strokeWidth = 1.4;
               }
 
               return (
@@ -175,7 +175,7 @@ export function StateMap({
                   strokeWidth={strokeWidth}
                   strokeLinejoin="round"
                   strokeLinecap="round"
-                  className="map-polygon transition-functional"
+                  className="map-polygon transition-colors duration-150"
                   tabIndex={hasData ? 0 : -1}
                   role={hasData ? 'button' : 'presentation'}
                   aria-label={`${nome}: ${
@@ -205,45 +205,42 @@ export function StateMap({
         {/* Tooltip Flutuante */}
         {tooltip && (
           <div
-            className="pointer-events-none absolute z-50 bg-slate-900 text-white rounded-lg shadow-xl px-3 py-2 border border-slate-700 min-w-[170px] -translate-x-1/2 -translate-y-full mb-2"
+            className="pointer-events-none absolute z-50 bg-slate-900 text-white rounded-md shadow-md px-3 py-2 border border-slate-800 min-w-[150px] -translate-x-1/2 -translate-y-full mb-2 text-xs"
             style={{
               left: `${tooltip.x}px`,
               top: `${tooltip.y}px`,
             }}
           >
-            <p className="text-xs font-bold text-white mb-0.5">{tooltip.nome}</p>
+            <p className="font-semibold text-white mb-0.5">{tooltip.nome}</p>
 
             {tooltip.count > 0 ? (
               <div>
-                <p className="text-xs font-semibold text-emerald-400 flex items-center gap-1">
+                <p className="text-xs text-blue-300 font-medium flex items-center gap-1">
                   <MapPin className="w-3 h-3" />
                   <span>
                     {tooltip.count} {tooltip.count === 1 ? 'iniciativa' : 'iniciativas'}
                   </span>
                 </p>
                 {tooltip.esportes.length > 0 && (
-                  <p className="text-[11px] text-slate-300 mt-1 line-clamp-1">
+                  <p className="text-[11px] text-slate-300 mt-0.5 line-clamp-1">
                     {tooltip.esportes.slice(0, 3).join(', ')}
                   </p>
                 )}
-                <p className="text-[10px] text-teal-300 mt-1 flex items-center gap-1 font-medium">
-                  <span>Clique para ver detalhes</span>
-                  <ArrowRight className="w-2.5 h-2.5" />
+                <p className="text-[10px] text-slate-400 mt-1 flex items-center gap-1 font-medium">
+                  <span>Abrir município</span>
+                  <ArrowRight className="w-2.5 h-2.5 text-slate-300" />
                 </p>
               </div>
             ) : (
-              <p className="text-[11px] text-slate-400">Sem iniciativas registradas</p>
+              <p className="text-[11px] text-slate-400">Sem iniciativas</p>
             )}
           </div>
         )}
       </div>
 
       {/* Legenda e Dica */}
-      <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-        <span className="flex items-center gap-1.5">
-          <Layers className="w-3.5 h-3.5 text-slate-400" />
-          Dica: clique em um município verde para abrir suas iniciativas
-        </span>
+      <div className="pt-2 border-t border-slate-100 text-xs text-slate-500 text-center">
+        Clique em uma cidade destacada para ver as iniciativas
       </div>
     </div>
   );

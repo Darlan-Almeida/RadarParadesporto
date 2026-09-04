@@ -1,12 +1,10 @@
 'use client';
 
 import React, { useMemo, useState, useRef } from 'react';
-import * as d3Geo from 'd3-geo';
-import { useBrazilGeoJSON } from '@/hooks/useIniciativas';
 import { PRECOMPUTED_BRAZIL_PATHS } from '@/data/precomputed-maps';
 import { UFInfo } from '@/lib/types';
 import { UFS_BRASIL } from '@/lib/constants';
-import { MapPin, Info, ArrowRight, Compass } from 'lucide-react';
+import { MapPin, ArrowRight } from 'lucide-react';
 
 interface BrazilMapProps {
   ufsSummary: UFInfo[];
@@ -26,49 +24,44 @@ interface TooltipData {
 function getStateColors(count: number, isHovered: boolean) {
   if (isHovered) {
     return {
-      fill: count > 0 ? '#1D4ED8' : '#CBD5E1',
-      stroke: '#0F2A4A',
-      strokeWidth: 2.5,
+      fill: count > 0 ? '#1d4ed8' : '#cbd5e1',
+      stroke: '#0f2a4a',
+      strokeWidth: 2,
     };
   }
 
   if (count >= 4) {
-    // Alta densidade (>=4 iniciativas, ex: SP, PB, RJ, MG): Azul Marinho Profundo
     return {
-      fill: '#1E3A8A',
-      stroke: '#0F2A4A',
-      strokeWidth: 1.5,
+      fill: '#1e3a8a',
+      stroke: '#0f2a4a',
+      strokeWidth: 1.2,
     };
   }
 
   if (count >= 2) {
-    // Média densidade (2 a 3 iniciativas): Azul Royal Vibrante
     return {
-      fill: '#2563EB',
-      stroke: '#0F2A4A',
-      strokeWidth: 1.4,
+      fill: '#2563eb',
+      stroke: '#0f2a4a',
+      strokeWidth: 1.2,
     };
   }
 
   if (count >= 1) {
-    // Baixa densidade / Iniciação (1 iniciativa): Azul Celeste Claro
     return {
-      fill: '#60A5FA',
-      stroke: '#0F2A4A',
-      strokeWidth: 1.3,
+      fill: '#60a5fa',
+      stroke: '#0f2a4a',
+      strokeWidth: 1.1,
     };
   }
 
-  // Sem dados cadastrados: Slate Neutro
   return {
-    fill: '#F1F5F9',
-    stroke: '#334155',
-    strokeWidth: 1.2,
+    fill: '#f1f5f9',
+    stroke: '#475569',
+    strokeWidth: 1,
   };
 }
 
 export function BrazilMap({ ufsSummary, onSelectState }: BrazilMapProps) {
-  const { data: geoData } = useBrazilGeoJSON();
   const [hoveredUF, setHoveredUF] = useState<string | null>(null);
   const [tooltip, setTooltip] = useState<TooltipData | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -117,29 +110,28 @@ export function BrazilMap({ ufsSummary, onSelectState }: BrazilMapProps) {
   return (
     <div
       ref={containerRef}
-      className="relative bg-white rounded-2xl border border-slate-200/80 p-5 sm:p-6 shadow-xs overflow-hidden"
+      className="relative bg-white rounded-lg border border-slate-200 p-5 overflow-hidden"
     >
       {/* Cabeçalho do Mapa */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 mb-2 border-b border-slate-100">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 mb-3 border-b border-slate-100">
         <div>
-          <h2 className="text-base sm:text-lg font-bold text-[#0F2A4A] flex items-center gap-2">
-            <Compass className="w-4 h-4 text-blue-700" />
+          <h2 className="text-sm sm:text-base font-bold text-slate-900 flex items-center gap-2">
             <span>Mapa Interativo do Brasil</span>
-            <span className="text-xs font-normal text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full border border-slate-200">
+            <span className="text-xs font-normal text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200">
               26 Estados + DF
             </span>
           </h2>
-          <p className="text-xs sm:text-sm text-slate-500 mt-0.5">
-            Clique em qualquer estado com destaque para explorar os municípios e projetos.
+          <p className="text-xs text-slate-500 mt-0.5">
+            Clique em qualquer estado para visualizar os municípios e projetos catalogados.
           </p>
         </div>
       </div>
 
       {/* SVG Container do Mapa */}
-      <div className="relative flex items-center justify-center min-h-[380px]">
+      <div className="relative flex items-center justify-center min-h-[360px]">
         <svg
           viewBox={`0 0 ${width} ${height}`}
-          className="w-full max-w-[520px] h-auto select-none drop-shadow-2xs"
+          className="w-full max-w-[500px] h-auto select-none"
           role="region"
           aria-label="Mapa interativo dos estados do Brasil"
         >
@@ -160,7 +152,7 @@ export function BrazilMap({ ufsSummary, onSelectState }: BrazilMapProps) {
                   strokeWidth={colors.strokeWidth}
                   strokeLinejoin="round"
                   strokeLinecap="round"
-                  className="cursor-pointer transition-colors duration-150 focus:outline-none"
+                  className="map-polygon transition-colors duration-150"
                   tabIndex={0}
                   role="button"
                   aria-label={`${UFS_BRASIL[sigla]?.nome || sigla}: ${
@@ -183,61 +175,61 @@ export function BrazilMap({ ufsSummary, onSelectState }: BrazilMapProps) {
           </g>
         </svg>
 
-        {/* Tooltip Flutuante */}
+        {/* Tooltip Flutuante Neutro */}
         {tooltip && (
           <div
-            className="pointer-events-none absolute z-50 bg-[#0F2A4A] text-white rounded-lg shadow-xl px-3.5 py-2.5 border border-slate-700 min-w-[180px] -translate-x-1/2 -translate-y-full mb-3 text-xs"
+            className="pointer-events-none absolute z-50 bg-slate-900 text-white rounded-md shadow-md px-3 py-2 border border-slate-800 min-w-[160px] -translate-x-1/2 -translate-y-full mb-2 text-xs"
             style={{
               left: `${tooltip.x}px`,
               top: `${tooltip.y}px`,
             }}
           >
-            <div className="flex items-center justify-between gap-2 border-b border-slate-700 pb-1.5 mb-1.5">
-              <span className="font-bold tracking-tight text-white">
+            <div className="flex items-center justify-between gap-2 border-b border-slate-800 pb-1 mb-1">
+              <span className="font-semibold text-white">
                 {tooltip.nome} ({tooltip.uf})
               </span>
-              <span className="text-[10px] text-blue-300 uppercase font-semibold">
+              <span className="text-[10px] text-slate-400 uppercase">
                 {tooltip.regiao}
               </span>
             </div>
 
-            <div className="flex items-center gap-1.5">
-              <MapPin className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
+            <div className="flex items-center gap-1 text-slate-300">
+              <MapPin className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
               {tooltip.count > 0 ? (
-                <span className="font-semibold text-emerald-300">
-                  {tooltip.count} {tooltip.count === 1 ? 'iniciativa' : 'iniciativas'} (
-                  {tooltip.municipiosCount} {tooltip.municipiosCount === 1 ? 'cidade' : 'cidades'})
+                <span className="font-medium text-slate-200">
+                  {tooltip.count} {tooltip.count === 1 ? 'iniciativa' : 'iniciativas'} ({tooltip.municipiosCount}{' '}
+                  {tooltip.municipiosCount === 1 ? 'cidade' : 'cidades'})
                 </span>
               ) : (
-                <span className="text-slate-400">Nenhuma iniciativa no momento</span>
+                <span className="text-slate-400">Sem iniciativas</span>
               )}
             </div>
 
-            <p className="text-[11px] text-slate-300 mt-1.5 flex items-center gap-1">
-              <span>Clique para abrir o estado</span>
-              <ArrowRight className="w-3 h-3 text-blue-300" />
+            <p className="text-[10px] text-slate-400 mt-1 flex items-center gap-1">
+              <span>Abrir estado</span>
+              <ArrowRight className="w-2.5 h-2.5" />
             </p>
           </div>
         )}
       </div>
 
       {/* Legenda Institucional */}
-      <div className="mt-3 pt-2.5 border-t border-slate-200/80 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-600 font-medium">
-        <div className="flex items-center gap-1">
-          <span className="w-2.5 h-2.5 rounded-xs bg-[#1E40AF] border border-[#1E3A8A]" />
+      <div className="mt-3 pt-2.5 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-600 font-medium">
+        <div className="flex items-center gap-1.5">
+          <span className="w-2.5 h-2.5 rounded-xs bg-[#1e3a8a] border border-[#0f2a4a]" />
           <span>Alta densidade</span>
         </div>
-        <div className="flex items-center gap-1">
-          <span className="w-2.5 h-2.5 rounded-xs bg-[#60A5FA] border border-[#3B82F6]" />
+        <div className="flex items-center gap-1.5">
+          <span className="w-2.5 h-2.5 rounded-xs bg-[#2563eb] border border-[#0f2a4a]" />
           <span>Média densidade</span>
         </div>
-        <div className="flex items-center gap-1">
-          <span className="w-2.5 h-2.5 rounded-xs bg-[#BFDBFE] border border-[#93C5FD]" />
+        <div className="flex items-center gap-1.5">
+          <span className="w-2.5 h-2.5 rounded-xs bg-[#60a5fa] border border-[#0f2a4a]" />
           <span>Baixa densidade</span>
         </div>
-        <div className="flex items-center gap-1">
-          <span className="w-2.5 h-2.5 rounded-xs bg-[#F8FAFC] border border-[#CBD5E1]" />
-          <span>Sem iniciativas cadastradas</span>
+        <div className="flex items-center gap-1.5">
+          <span className="w-2.5 h-2.5 rounded-xs bg-[#f1f5f9] border border-[#475569]" />
+          <span>Sem iniciativas</span>
         </div>
       </div>
     </div>
