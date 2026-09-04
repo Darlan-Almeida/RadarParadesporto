@@ -22,12 +22,12 @@ import {
   Phone,
   Smartphone,
   MessageSquare,
-  Instagram,
   Navigation,
   Search,
   Filter,
   Eye,
 } from 'lucide-react';
+import { InstagramIcon } from '@/components/InstagramIcon';
 import { StatusIniciativa, Iniciativa } from '@/lib/types';
 import { matchSearch } from '@/lib/utils';
 import { HeaderReview } from '@/components/design-review/HeaderReview';
@@ -368,7 +368,7 @@ export default function AdminPage() {
                   )}
                   {item.instagram && (
                     <span className="inline-flex items-center gap-1 text-pink-700 font-medium">
-                      <Instagram className="w-3.5 h-3.5 text-pink-500" /> {item.instagram}
+                      <InstagramIcon className="w-3.5 h-3.5 text-pink-500" /> {item.instagram}
                     </span>
                   )}
                   {item.email && (

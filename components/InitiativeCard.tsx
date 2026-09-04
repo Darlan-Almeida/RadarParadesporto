@@ -14,9 +14,9 @@ import {
   Clock,
   CheckCircle2,
   MessageSquare,
-  Instagram,
   Navigation,
 } from 'lucide-react';
+import { InstagramIcon } from '@/components/InstagramIcon';
 
 interface InitiativeCardProps {
   iniciativa: Iniciativa;
@@ -166,7 +166,7 @@ export function InitiativeCard({ iniciativa }: InitiativeCardProps) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 bg-pink-50 hover:bg-pink-100 text-pink-700 font-medium px-2.5 py-1.5 rounded-lg transition-colors border border-pink-200"
             >
-              <Instagram className="w-3.5 h-3.5 text-pink-600" />
+              <InstagramIcon className="w-3.5 h-3.5 text-pink-600" />
               <span>{iniciativa.instagram.startsWith('@') ? iniciativa.instagram : `@${iniciativa.instagram}`}</span>
             </a>
           )}

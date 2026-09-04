@@ -42,7 +42,7 @@ export function HeaderReview({
             </div>
             <div className="flex items-baseline gap-2">
               <span className="text-xl font-bold tracking-tight text-[#0F2A4A]">
-                Radar<span className="text-blue-600">PCD</span>
+                Radar<span className="text-blue-600">Paradesporto</span>
               </span>
               <span className="hidden sm:inline-block text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
                 Catálogo Nacional

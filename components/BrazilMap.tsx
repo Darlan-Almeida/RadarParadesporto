@@ -26,44 +26,44 @@ interface TooltipData {
 function getStateColors(count: number, isHovered: boolean) {
   if (isHovered) {
     return {
-      fill: count > 0 ? '#2563EB' : '#E2E8F0',
+      fill: count > 0 ? '#1D4ED8' : '#CBD5E1',
       stroke: '#0F2A4A',
-      strokeWidth: 1.8,
+      strokeWidth: 2.5,
     };
   }
 
-  if (count >= 10) {
-    // Alta densidade: azul mais intenso
+  if (count >= 4) {
+    // Alta densidade (>=4 iniciativas, ex: SP, PB, RJ, MG): Azul Marinho Profundo
     return {
-      fill: '#1E40AF',
-      stroke: '#1E3A8A',
-      strokeWidth: 0.9,
+      fill: '#1E3A8A',
+      stroke: '#0F2A4A',
+      strokeWidth: 1.5,
     };
   }
 
-  if (count >= 3) {
-    // Média densidade: azul médio
+  if (count >= 2) {
+    // Média densidade (2 a 3 iniciativas): Azul Royal Vibrante
+    return {
+      fill: '#2563EB',
+      stroke: '#0F2A4A',
+      strokeWidth: 1.4,
+    };
+  }
+
+  if (count >= 1) {
+    // Baixa densidade / Iniciação (1 iniciativa): Azul Celeste Claro
     return {
       fill: '#60A5FA',
-      stroke: '#3B82F6',
-      strokeWidth: 0.8,
+      stroke: '#0F2A4A',
+      strokeWidth: 1.3,
     };
   }
 
-  if (count > 0) {
-    // Baixa densidade: azul muito claro
-    return {
-      fill: '#BFDBFE',
-      stroke: '#93C5FD',
-      strokeWidth: 0.75,
-    };
-  }
-
-  // Sem iniciativas: neutro muito claro
+  // Sem dados cadastrados: Slate Neutro
   return {
-    fill: '#F8FAFC',
-    stroke: '#CBD5E1',
-    strokeWidth: 0.75,
+    fill: '#F1F5F9',
+    stroke: '#334155',
+    strokeWidth: 1.2,
   };
 }
 

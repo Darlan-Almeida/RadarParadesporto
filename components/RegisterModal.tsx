@@ -13,13 +13,13 @@ import {
   Tag,
   Users,
   MessageSquare,
-  Instagram,
   Navigation,
   Phone,
   Smartphone,
   Globe,
   ExternalLink,
 } from 'lucide-react';
+import { InstagramIcon } from '@/components/InstagramIcon';
 import { IniciativaInput } from '@/lib/types';
 import {
   LISTA_UFS,
@@ -510,7 +510,7 @@ export function RegisterModal({
                 {/* Instagram */}
                 <div>
                   <label className="block text-[11px] font-semibold text-slate-700 mb-1 flex items-center gap-1">
-                    <Instagram className="w-3.5 h-3.5 text-pink-600" />
+                    <InstagramIcon className="w-3.5 h-3.5 text-pink-600" />
                     <span>Instagram (@perfil)</span>
                   </label>
                   <input

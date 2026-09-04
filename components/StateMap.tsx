@@ -146,24 +146,24 @@ export function StateMap({
               const isExternalHighlight =
                 highlightedMunicipio && normalizeText(highlightedMunicipio) === normNome;
 
-              let fill = '#f1f5f9'; // slate-100
-              let stroke = '#cbd5e1'; // slate-300
-              let strokeWidth = 0.5;
+              let fill = '#f8fafc'; // slate-50
+              let stroke = '#475569'; // slate-600 - bordas nítidas e bem visíveis
+              let strokeWidth = 0.9;
 
               if (hasData) {
                 fill = '#059669'; // emerald-600
-                stroke = '#065f46'; // emerald-800
-                strokeWidth = 1.2;
+                stroke = '#064e3b'; // emerald-900
+                strokeWidth = 1.4;
 
                 if (isHovered || isExternalHighlight) {
                   fill = '#0d9488'; // teal-600
                   stroke = '#042f2e';
-                  strokeWidth = 2.2;
+                  strokeWidth = 2.4;
                 }
               } else if (isHovered) {
                 fill = '#e2e8f0';
-                stroke = '#94a3b8';
-                strokeWidth = 1.2;
+                stroke = '#0f172a';
+                strokeWidth = 1.6;
               }
 
               return (

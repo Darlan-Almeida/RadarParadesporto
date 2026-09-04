@@ -30,72 +30,91 @@ interface TooltipInfo {
   iniciativas: number;
 }
 
-// Mock representativo para validação visual dos 4 níveis da escala de azul
+import { useAllUFsSummary, useNationalSummary } from '@/hooks/useIniciativas';
+
+// Mock de fallback para validação visual se ainda não carregado
 const MOCK_ESTADOS_INICIATIVAS: Record<string, number> = {
-  SP: 420, // Alta quantidade
-  RJ: 190, // Alta quantidade
-  MG: 160, // Alta quantidade
-  RS: 110, // Alta quantidade
-  PB: 85,  // Média quantidade (Paraíba em destaque)
-  PE: 75,  // Média quantidade
-  SC: 60,  // Média quantidade
-  PR: 55,  // Média quantidade
-  BA: 40,  // Média quantidade
-  CE: 28,  // Baixa quantidade
-  DF: 25,  // Baixa quantidade
-  // Demais estados: 0 iniciativas no mock
+  SP: 420,
+  RJ: 190,
+  MG: 160,
+  RS: 110,
+  PB: 85,
+  PE: 75,
+  SC: 60,
+  PR: 55,
+  BA: 40,
+  CE: 28,
+  DF: 25,
 };
 
 // Escala institucional de azul conforme Item 2 da especificação
 function getStateColors(count: number, isHovered: boolean) {
   if (isHovered) {
     return {
-      fill: count > 0 ? '#2563EB' : '#E2E8F0',
+      fill: count > 0 ? '#1D4ED8' : '#CBD5E1',
       stroke: '#0F2A4A',
-      strokeWidth: 1.8,
+      strokeWidth: 2.5,
     };
   }
 
-  if (count > 100) {
-    // Alta quantidade: azul mais intenso
+  if (count >= 4) {
+    // Alta densidade (>=4 iniciativas, ex: SP, PB, RJ, MG): Azul Marinho Profundo
     return {
-      fill: '#1E40AF',
-      stroke: '#1E3A8A',
-      strokeWidth: 0.9,
+      fill: '#1E3A8A',
+      stroke: '#0F2A4A',
+      strokeWidth: 1.5,
     };
   }
 
-  if (count >= 30) {
-    // Média quantidade: azul médio
+  if (count >= 2) {
+    // Média densidade (2 a 3 iniciativas): Azul Royal Vibrante
+    return {
+      fill: '#2563EB',
+      stroke: '#0F2A4A',
+      strokeWidth: 1.4,
+    };
+  }
+
+  if (count >= 1) {
+    // Baixa densidade / Iniciação (1 iniciativa): Azul Celeste Claro
     return {
       fill: '#60A5FA',
-      stroke: '#3B82F6',
-      strokeWidth: 0.8,
+      stroke: '#0F2A4A',
+      strokeWidth: 1.3,
     };
   }
 
-  if (count > 0) {
-    // Baixa quantidade: azul muito claro
-    return {
-      fill: '#BFDBFE',
-      stroke: '#93C5FD',
-      strokeWidth: 0.75,
-    };
-  }
-
-  // Sem iniciativas: neutro muito claro
+  // Sem dados cadastrados: Slate Neutro
   return {
-    fill: '#F8FAFC',
-    stroke: '#CBD5E1',
-    strokeWidth: 0.75,
+    fill: '#F1F5F9',
+    stroke: '#334155',
+    strokeWidth: 1.2,
   };
 }
 
 export function VistaBrasil({ onSelectState, onOpenRegister }: VistaBrasilProps) {
+  const { data: ufsSummary = [] } = useAllUFsSummary();
+  const { data: nationalSummary } = useNationalSummary();
   const [hoveredUF, setHoveredUF] = useState<string | null>(null);
   const [tooltip, setTooltip] = useState<TooltipInfo | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const ufsMap = React.useMemo(() => {
+    const map = new Map<string, number>();
+    ufsSummary.forEach((u) => {
+      map.set(u.sigla.toUpperCase(), u.totalIniciativas);
+    });
+    return map;
+  }, [ufsSummary]);
+
+  const getCountForUF = (sigla: string) => {
+    const key = sigla.toUpperCase();
+    if (ufsMap.has(key)) {
+      return ufsMap.get(key)!;
+    }
+    return MOCK_ESTADOS_INICIATIVAS[key] || 0;
+  };
 
   const width = 560;
   const height = 580;
@@ -107,7 +126,7 @@ export function VistaBrasil({ onSelectState, onOpenRegister }: VistaBrasilProps)
     if (!containerRef.current) return;
     const rect = containerRef.current.getBoundingClientRect();
     const sigla = item.sigla || '';
-    const count = MOCK_ESTADOS_INICIATIVAS[sigla] || 0;
+    const count = getCountForUF(sigla);
     const ufInfo = UFS_BRASIL[sigla];
 
     setHoveredUF(sigla);
@@ -129,11 +148,20 @@ export function VistaBrasil({ onSelectState, onOpenRegister }: VistaBrasilProps)
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const clean = searchQuery.trim().toUpperCase();
-    if (clean === 'PB' || clean.includes('PARA') || clean.includes('JOAO PESSOA')) {
-      onSelectState('PB');
-    } else if (clean) {
-      onSelectState('PB'); // Demonstração do protótipo
+    if (!clean) return;
+
+    // Tenta encontrar por sigla exata ou por nome do estado
+    for (const [sigla, info] of Object.entries(UFS_BRASIL)) {
+      if (
+        sigla === clean ||
+        info.nome.toUpperCase().includes(clean) ||
+        clean.includes(sigla)
+      ) {
+        onSelectState(sigla);
+        return;
+      }
     }
+    onSelectState('PB');
   };
 
   return (
@@ -188,7 +216,7 @@ export function VistaBrasil({ onSelectState, onOpenRegister }: VistaBrasilProps)
               <div className="inline-flex items-center gap-2 bg-emerald-50 text-emerald-900 px-3 py-1.5 rounded-lg border border-emerald-200/80">
                 <CheckCircle2 className="w-4 h-4 text-emerald-700 flex-shrink-0" />
                 <span className="text-xs sm:text-sm font-bold tracking-tight">
-                  1.248 iniciativas cadastradas
+                  {(nationalSummary?.totalIniciativas || 1248).toLocaleString('pt-BR')} iniciativas cadastradas
                 </span>
               </div>
 
@@ -239,7 +267,7 @@ export function VistaBrasil({ onSelectState, onOpenRegister }: VistaBrasilProps)
                     <g>
                       {PRECOMPUTED_BRAZIL_PATHS.map((item) => {
                         const sigla = item.sigla || '';
-                        const count = MOCK_ESTADOS_INICIATIVAS[sigla] || 0;
+                        const count = getCountForUF(sigla);
                         const isHovered = hoveredUF === sigla;
                         const colors = getStateColors(count, isHovered);
 
@@ -260,7 +288,7 @@ export function VistaBrasil({ onSelectState, onOpenRegister }: VistaBrasilProps)
                                 ? `${count} iniciativas cadastradas`
                                 : 'Sem iniciativas registradas'
                             }`}
-                            onClick={() => onSelectState(sigla === 'PB' ? 'PB' : sigla)}
+                            onClick={() => onSelectState(sigla)}
                             onKeyDown={(e) => {
                               if (e.key === 'Enter' || e.key === ' ') {
                                 e.preventDefault();
@@ -311,20 +339,20 @@ export function VistaBrasil({ onSelectState, onOpenRegister }: VistaBrasilProps)
               {/* Legenda Institucional com a Escala de Azul */}
               <div className="mt-3 pt-2.5 border-t border-slate-200/80 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-600 font-medium">
                 <div className="flex items-center gap-1">
-                  <span className="w-2.5 h-2.5 rounded-xs bg-[#1E40AF] border border-[#1E3A8A]" />
-                  <span>Alta densidade (&gt;100)</span>
+                  <span className="w-2.5 h-2.5 rounded-xs bg-[#1E3A8A] border border-[#0F2A4A]" />
+                  <span>Alta densidade (4+)</span>
                 </div>
                 <div className="flex items-center gap-1">
-                  <span className="w-2.5 h-2.5 rounded-xs bg-[#60A5FA] border border-[#3B82F6]" />
-                  <span>Média (30–100)</span>
+                  <span className="w-2.5 h-2.5 rounded-xs bg-[#2563EB] border border-[#0F2A4A]" />
+                  <span>Média (2–3)</span>
                 </div>
                 <div className="flex items-center gap-1">
-                  <span className="w-2.5 h-2.5 rounded-xs bg-[#BFDBFE] border border-[#93C5FD]" />
-                  <span>Baixa (1–30)</span>
+                  <span className="w-2.5 h-2.5 rounded-xs bg-[#60A5FA] border border-[#0F2A4A]" />
+                  <span>Iniciação (1)</span>
                 </div>
                 <div className="flex items-center gap-1">
-                  <span className="w-2.5 h-2.5 rounded-xs bg-[#F8FAFC] border border-[#CBD5E1]" />
-                  <span>Sem dados</span>
+                  <span className="w-2.5 h-2.5 rounded-xs bg-[#F1F5F9] border border-[#334155]" />
+                  <span>Sem cadastros</span>
                 </div>
               </div>
 
