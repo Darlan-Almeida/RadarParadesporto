@@ -1,0 +1,777 @@
+[
+  {
+    "id": "iniciativa-pb-jp-ipp",
+    "nome": "Instituto Paraibano de Paradesporto (IPP)",
+    "descricao": "Polo estadual de excelência no paradesporto paraibano com treinos e escolinhas adaptadas na Vila Olímpica Parahyba, atendendo desde a base até o alto rendimento paralímpico nacional.",
+    "uf": "PB",
+    "municipio": "João Pessoa",
+    "endereco": "Vila Olímpica Parahyba - Rua Professora Maria Sales, Bairro dos Estados",
+    "esportes": [
+      "Atletismo",
+      "Natação",
+      "Bocha paralímpica",
+      "Basquete em cadeira de rodas",
+      "Parataekwondo"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Deficiência visual",
+      "Deficiência intelectual"
+    ],
+    "gratuito": true,
+    "telefone": "(83) 3218-4000",
+    "celular": "(83) 98845-1200",
+    "whatsapp": "5583988451200",
+    "instagram": "@ipp_paradesporto",
+    "email": "contato@ipparadesporto.org.br",
+    "site": "https://paraiba.pb.gov.br",
+    "googleMapsUrl": "https://maps.google.com/?q=Vila+Olimpica+Parahyba+Joao+Pessoa",
+    "fonte": "https://paraiba.pb.gov.br/noticias/paradesporto",
+    "status": "publicado",
+    "dataCadastro": "2024-01-10"
+  },
+  {
+    "id": "iniciativa-pb-jp-apace",
+    "nome": "Associação Paraibana de Cegos (APACE)",
+    "descricao": "Instituição pioneira no desenvolvimento esportivo de pessoas com deficiência visual na Paraíba, mantendo equipes campeãs de Futebol de 5 (Futebol de Cegos) e Goalball.",
+    "uf": "PB",
+    "municipio": "João Pessoa",
+    "endereco": "Rua das Trincheiras, 450 - Centro",
+    "esportes": [
+      "Futebol de 5",
+      "Goalball",
+      "Atletismo para cegos",
+      "Judô paralímpico"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência visual"
+    ],
+    "gratuito": true,
+    "telefone": "(83) 3241-1500",
+    "celular": "(83) 99123-4500",
+    "whatsapp": "5583991234500",
+    "instagram": "@apace_paraiba",
+    "email": "apace.pb@gmail.com",
+    "googleMapsUrl": "https://maps.google.com/?q=Rua+das+Trincheiras+450+Joao+Pessoa",
+    "fonte": "https://cbdv.org.br/clubes-filiados",
+    "status": "publicado",
+    "dataCadastro": "2024-01-15"
+  },
+  {
+    "id": "iniciativa-pb-cg-crp",
+    "nome": "Centro de Referência Paralímpico de Campina Grande (CPB / SEJEL)",
+    "descricao": "Unidade oficial da Rede de Centros de Referência do Comitê Paralímpico Brasileiro no Parque da Liberdade, oferecendo iniciação e desenvolvimento esportivo gratuito para crianças e jovens.",
+    "uf": "PB",
+    "municipio": "Campina Grande",
+    "endereco": "Parque da Liberdade - Bairro da Liberdade",
+    "esportes": [
+      "Atletismo",
+      "Bocha paralímpica",
+      "Goalball",
+      "Futebol de cegos",
+      "Halterofilismo paralímpico",
+      "Parataekwondo"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Deficiência visual",
+      "Deficiência intelectual",
+      "Paralisia cerebral"
+    ],
+    "gratuito": true,
+    "telefone": "(83) 3310-6000",
+    "celular": "(83) 98711-3300",
+    "whatsapp": "5583987113300",
+    "instagram": "@sejelcg",
+    "email": "paradesporto@campinagrande.pb.gov.br",
+    "site": "https://campinagrande.pb.gov.br",
+    "googleMapsUrl": "https://maps.google.com/?q=Parque+da+Liberdade+Campina+Grande",
+    "fonte": "https://cpb.org.br/centros-de-referencia",
+    "status": "publicado",
+    "dataCadastro": "2024-01-20"
+  },
+  {
+    "id": "iniciativa-pb-patos-ifpb",
+    "nome": "Núcleo de Esporte Adaptado do Sertão Paraibano (IFPB / Festival Paralímpico)",
+    "descricao": "Polo regional no Sertão da Paraíba focado em festivais escolares, iniciação paradesportiva e capacitação técnica de professores para inclusão de alunos com deficiência.",
+    "uf": "PB",
+    "municipio": "Patos",
+    "endereco": "Campus IFPB Patos - Alto da Tubiba",
+    "esportes": [
+      "Atletismo",
+      "Bocha paralímpica",
+      "Iniciação esportiva adaptada"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Deficiência intelectual",
+      "Deficiência visual"
+    ],
+    "gratuito": true,
+    "telefone": "(83) 3421-2000",
+    "celular": "(83) 99800-4411",
+    "whatsapp": "5583998004411",
+    "instagram": "@ifpb_patos",
+    "email": "esportes.patos@ifpb.edu.br",
+    "site": "https://ifpb.edu.br/patos",
+    "googleMapsUrl": "https://maps.google.com/?q=IFPB+Campus+Patos",
+    "fonte": "https://cpb.org.br",
+    "status": "publicado",
+    "dataCadastro": "2024-02-01"
+  },
+  {
+    "id": "iniciativa-sp-capital-ctp",
+    "nome": "Centro de Treinamento Paralímpico Brasileiro (CPB)",
+    "descricao": "O maior centro de excelência paralímpica da América Latina, sediando a Escola Paralímpica de Esportes com turmas regulares de iniciação para crianças e jovens de 7 a 17 anos.",
+    "uf": "SP",
+    "municipio": "São Paulo",
+    "endereco": "Rodovia dos Imigrantes, km 11,5 - Vila Guarani",
+    "esportes": [
+      "Atletismo",
+      "Natação",
+      "Bocha paralímpica",
+      "Goalball",
+      "Futebol de 5",
+      "Futebol PC",
+      "Basquete em cadeira de rodas",
+      "Tênis de mesa",
+      "Halterofilismo",
+      "Parataekwondo",
+      "Vôlei sentado",
+      "Judô paralímpico"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Deficiência visual",
+      "Deficiência intelectual"
+    ],
+    "gratuito": true,
+    "telefone": "(11) 4380-8700",
+    "celular": "(11) 97654-8700",
+    "whatsapp": "5511976548700",
+    "instagram": "@ocpboficial",
+    "email": "escolaparalimpica@cpb.org.br",
+    "site": "https://cpb.org.br",
+    "googleMapsUrl": "https://maps.google.com/?q=Centro+de+Treinamento+Paralimpico+Brasileiro",
+    "fonte": "https://cpb.org.br",
+    "status": "publicado",
+    "dataCadastro": "2024-01-05"
+  },
+  {
+    "id": "iniciativa-sp-capital-add",
+    "nome": "ADD — Associação Desportiva para Deficientes",
+    "descricao": "Entidade histórica com mais de 25 anos de atuação continuada no esporte adaptado, basquete em cadeira de rodas e formação cidadã.",
+    "uf": "SP",
+    "municipio": "São Paulo",
+    "endereco": "Rua das Rosas, 245 - Vila Clementino",
+    "esportes": [
+      "Basquete em cadeira de rodas",
+      "Atletismo",
+      "Natação",
+      "Bocha",
+      "Vôlei sentado"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física"
+    ],
+    "gratuito": true,
+    "telefone": "(11) 5011-2294",
+    "celular": "(11) 98822-2294",
+    "whatsapp": "5511988222294",
+    "instagram": "@add_associacao",
+    "email": "contato@add.org.br",
+    "site": "https://add.org.br",
+    "googleMapsUrl": "https://maps.google.com/?q=Rua+das+Rosas+245+Sao+Paulo",
+    "fonte": "https://add.org.br",
+    "status": "publicado",
+    "dataCadastro": "2024-01-12"
+  },
+  {
+    "id": "iniciativa-sp-scs-add-cespro",
+    "nome": "ADD Escola de Esporte Adaptado (Núcleo CESPRO)",
+    "descricao": "Escolinha de iniciação esportiva inclusiva para jovens e crianças do Grande ABC com acompanhamento multiprofissional.",
+    "uf": "SP",
+    "municipio": "São Caetano do Sul",
+    "endereco": "Complexo Esportivo Municipal CESPRO - Bairro Prosperidade",
+    "esportes": [
+      "Iniciação esportiva adaptada",
+      "Bocha",
+      "Atletismo",
+      "Basquete em cadeira de rodas"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Deficiência intelectual",
+      "Deficiência visual"
+    ],
+    "gratuito": true,
+    "telefone": "(11) 4224-0000",
+    "celular": "(11) 99111-4224",
+    "whatsapp": "5511991114224",
+    "instagram": "@add_associacao",
+    "email": "escola@add.org.br",
+    "site": "https://add.org.br/programa/escola-de-esportes",
+    "googleMapsUrl": "https://maps.google.com/?q=CESPRO+Sao+Caetano+do+Sul",
+    "fonte": "https://add.org.br/programa/escola-de-esportes",
+    "status": "publicado",
+    "dataCadastro": "2024-02-05"
+  },
+  {
+    "id": "iniciativa-sp-sjc-athlon",
+    "nome": "Instituto Athlon de Desenvolvimento Esportivo",
+    "descricao": "Polo de referência no Vale do Paraíba com mais de 10 modalidades paralímpicas ativas em parceria com projetos de assistência social.",
+    "uf": "SP",
+    "municipio": "São José dos Campos",
+    "endereco": "Complexo Esportivo Teatrão - Rua Doutor Ricardo Pinto da Silva, Vila Industrial",
+    "esportes": [
+      "Atletismo",
+      "Natação",
+      "Parabadminton",
+      "Goalball",
+      "Bocha",
+      "Halterofilismo"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Deficiência visual",
+      "Deficiência intelectual",
+      "Transtorno do Espectro Autista (TEA)"
+    ],
+    "gratuito": true,
+    "telefone": "(12) 3911-5000",
+    "celular": "(12) 99777-5000",
+    "whatsapp": "5512997775000",
+    "instagram": "@institutoathlon",
+    "email": "contato@institutoathlon.org.br",
+    "site": "https://institutoathlon.org.br",
+    "googleMapsUrl": "https://maps.google.com/?q=Teatrao+Sao+Jose+dos+Campos",
+    "fonte": "https://institutoathlon.org.br",
+    "status": "publicado",
+    "dataCadastro": "2024-02-15"
+  },
+  {
+    "id": "iniciativa-pe-recife-addf",
+    "nome": "Associação Desportiva de Deficientes Físicos (ADDF)",
+    "descricao": "Entidade tradicional em Pernambuco focada na reabilitação através do esporte e no treinamento de basquete sobre rodas e tênis de mesa.",
+    "uf": "PE",
+    "municipio": "Recife",
+    "endereco": "Rua do Progresso, 300 - Soledade",
+    "esportes": [
+      "Basquete em cadeira de rodas",
+      "Atletismo",
+      "Tênis de mesa"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física"
+    ],
+    "gratuito": true,
+    "telefone": "(81) 3228-4500",
+    "celular": "(81) 98765-4500",
+    "whatsapp": "5581987654500",
+    "instagram": "@addf_pe",
+    "email": "addfpe@gmail.com",
+    "googleMapsUrl": "https://maps.google.com/?q=Rua+do+Progresso+300+Recife",
+    "fonte": "https://cbtm.org.br",
+    "status": "publicado",
+    "dataCadastro": "2024-02-20"
+  },
+  {
+    "id": "iniciativa-pe-recife-aappd",
+    "nome": "Associação de Apoio à Pessoa Portadora de Deficiência (AAPPD)",
+    "descricao": "Projetos de lazer inclusivo, natação e atletismo adaptado para múltiplos tipos de deficiência na capital pernambucana.",
+    "uf": "PE",
+    "municipio": "Recife",
+    "endereco": "Av. Norte Miguel Arraes, 1200 - Santo Amaro",
+    "esportes": [
+      "Atletismo",
+      "Tênis de mesa",
+      "Natação"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência intelectual",
+      "Deficiência visual",
+      "Deficiência física"
+    ],
+    "gratuito": true,
+    "telefone": "(81) 3426-1180",
+    "celular": "(81) 99988-1180",
+    "whatsapp": "5581999881180",
+    "email": "aappd.pe@hotmail.com",
+    "googleMapsUrl": "https://maps.google.com/?q=Av+Norte+1200+Recife",
+    "fonte": "https://cbtm.org.br",
+    "status": "publicado",
+    "dataCadastro": "2024-02-25"
+  },
+  {
+    "id": "iniciativa-ce-fortaleza-cfo",
+    "nome": "Centro de Referência Paralímpico do Ceará (CFO / CPB)",
+    "descricao": "Unidade de referência instalada no Centro de Formação Olímpica de Fortaleza com infraestrutura de ponta e modalidades para o Nordeste setentrional.",
+    "uf": "CE",
+    "municipio": "Fortaleza",
+    "endereco": "Centro de Formação Olímpica (CFO) - Av. Alberto Craveiro, Castelão",
+    "esportes": [
+      "Atletismo",
+      "Natação",
+      "Paraciclismo",
+      "Halterofilismo",
+      "Goalball",
+      "Tênis em cadeira de rodas"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Deficiência visual",
+      "Deficiência intelectual"
+    ],
+    "gratuito": true,
+    "telefone": "(85) 3101-4400",
+    "celular": "(85) 98833-4400",
+    "whatsapp": "5585988334400",
+    "instagram": "@cfoceara",
+    "email": "paradesporto@esporte.ce.gov.br",
+    "site": "https://esporte.ce.gov.br",
+    "googleMapsUrl": "https://maps.google.com/?q=Centro+de+Formacao+Olimpica+Fortaleza",
+    "fonte": "https://cpb.org.br/centros-de-referencia",
+    "status": "publicado",
+    "dataCadastro": "2024-03-01"
+  },
+  {
+    "id": "iniciativa-ba-salvador-crp",
+    "nome": "Centro de Referência Paralímpico da Bahia (SUDESB / CPB)",
+    "descricao": "Polo central em Salvador na Piscina Olímpica da Bahia e no Ginásio de Pituaçu com escolinhas públicas e equipe multidisciplinar.",
+    "uf": "BA",
+    "municipio": "Salvador",
+    "endereco": "Parque Esportivo de Pituaçu - Av. Otávio Mangabeira",
+    "esportes": [
+      "Natação",
+      "Atletismo",
+      "Bocha paralímpica",
+      "Futebol de 5",
+      "Basquete em cadeira de rodas"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Deficiência visual",
+      "Deficiência auditiva",
+      "Deficiência intelectual"
+    ],
+    "gratuito": true,
+    "telefone": "(71) 3103-0100",
+    "celular": "(71) 99122-3100",
+    "whatsapp": "5571991223100",
+    "instagram": "@sudesbesporte",
+    "email": "paradesporto@sudesb.ba.gov.br",
+    "site": "http://www.sudesb.ba.gov.br",
+    "googleMapsUrl": "https://maps.google.com/?q=Piscina+Olimpica+da+Bahia+Pituaçu",
+    "fonte": "https://cpb.org.br/centros-de-referencia",
+    "status": "publicado",
+    "dataCadastro": "2024-03-05"
+  },
+  {
+    "id": "iniciativa-mg-bh-apebh",
+    "nome": "APEBH — Associação Paradesportiva e Esportiva de Belo Horizonte",
+    "descricao": "Associação de ponta em Minas Gerais fomentando natação, atletismo e bocha paralímpica com destaque em torneios nacionais.",
+    "uf": "MG",
+    "municipio": "Belo Horizonte",
+    "endereco": "Av. Olegário Maciel, 800 - Centro",
+    "esportes": [
+      "Natação",
+      "Atletismo",
+      "Bocha paralímpica",
+      "Halterofilismo",
+      "Tênis de mesa"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Deficiência visual",
+      "Deficiência intelectual"
+    ],
+    "gratuito": true,
+    "telefone": "(31) 3277-4500",
+    "celular": "(31) 99876-4500",
+    "whatsapp": "5531998764500",
+    "instagram": "@apebh_oficial",
+    "email": "contato@apebh.org.br",
+    "site": "https://apebh.org.br",
+    "googleMapsUrl": "https://maps.google.com/?q=Av+Olegario+Maciel+800+Belo+Horizonte",
+    "fonte": "https://apebh.org.br",
+    "status": "publicado",
+    "dataCadastro": "2024-03-10"
+  },
+  {
+    "id": "iniciativa-mg-uberlandia-cddu",
+    "nome": "CDDU — Clube Desportivo para Deficientes de Uberlândia",
+    "descricao": "Polo nacional do halterofilismo paralímpico e bocha adaptada em convênio com a Universidade Federal de Uberlândia (UFU).",
+    "uf": "MG",
+    "municipio": "Uberlândia",
+    "endereco": "Campus Educação Física UFU - Bairro Aparecida",
+    "esportes": [
+      "Esporte adaptado",
+      "Halterofilismo paralímpico",
+      "Bocha",
+      "Atletismo"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física"
+    ],
+    "gratuito": true,
+    "telefone": "(34) 3239-4100",
+    "celular": "(34) 99191-4100",
+    "whatsapp": "5534991914100",
+    "instagram": "@cddu_uberlandia",
+    "email": "cdduuberlandia@gmail.com",
+    "googleMapsUrl": "https://maps.google.com/?q=Campus+Educacao+Fisica+UFU+Uberlandia",
+    "fonte": "https://ande.org.br/clubes-vinculados",
+    "status": "publicado",
+    "dataCadastro": "2024-03-12"
+  },
+  {
+    "id": "iniciativa-rj-capital-superar",
+    "nome": "Instituto Superar — Paradesporto RJ",
+    "descricao": "Organização do Rio de Janeiro voltada à inclusão de atletas paralímpicos através de escolinhas de atletismo, natação e esportes em cadeira de rodas.",
+    "uf": "RJ",
+    "municipio": "Rio de Janeiro",
+    "endereco": "Parque dos Atletas - Av. Salvador Allende, Barra Olímpica",
+    "esportes": [
+      "Atletismo",
+      "Natação",
+      "Basquete em cadeira de rodas",
+      "Remo adaptado",
+      "Tênis de mesa"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Deficiência visual",
+      "Deficiência intelectual"
+    ],
+    "gratuito": true,
+    "telefone": "(21) 3450-2000",
+    "celular": "(21) 98111-2000",
+    "whatsapp": "5521981112000",
+    "instagram": "@institutosuperar",
+    "email": "contato@institutosuperar.org.br",
+    "site": "https://institutosuperar.org.br",
+    "googleMapsUrl": "https://maps.google.com/?q=Parque+dos+Atletas+Rio+de+Janeiro",
+    "fonte": "https://cpb.org.br",
+    "status": "publicado",
+    "dataCadastro": "2024-03-15"
+  },
+  {
+    "id": "iniciativa-rj-niteroi-andef",
+    "nome": "ANDEF — Associação Niteroiense dos Deficientes Físicos",
+    "descricao": "Um dos mais prestigiados complexos paradesportivos do país, sede de treinamentos internacionais e programas sociais comunitários.",
+    "uf": "RJ",
+    "municipio": "Niterói",
+    "endereco": "Estrada Velha de Maricá, 4830 - Rio do Ouro",
+    "esportes": [
+      "Bocha paralímpica",
+      "Futebol de 7 (PC)",
+      "Basquete em cadeira de rodas",
+      "Atletismo",
+      "Natação"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Paralisia cerebral"
+    ],
+    "gratuito": true,
+    "telefone": "(21) 3262-1000",
+    "celular": "(21) 99999-1000",
+    "whatsapp": "5521999991000",
+    "instagram": "@andef_oficial",
+    "email": "andef@andef.org.br",
+    "site": "https://andef.org.br",
+    "googleMapsUrl": "https://maps.google.com/?q=ANDEF+Niteroi",
+    "fonte": "https://andef.org.br",
+    "status": "publicado",
+    "dataCadastro": "2024-03-18"
+  },
+  {
+    "id": "iniciativa-pr-curitiba-adfp",
+    "nome": "ADFP — Associação dos Deficientes Físicos do Paraná",
+    "descricao": "Instituição com mais de 40 anos em Curitiba com ampla grade de esportes adaptados, basquete sobre rodas e esgrima em cadeira de rodas.",
+    "uf": "PR",
+    "municipio": "Curitiba",
+    "endereco": "Rua Guabirotuba, 769 - Prado Velho",
+    "esportes": [
+      "Basquete em cadeira de rodas",
+      "Esgrima em cadeira de rodas",
+      "Bocha paralímpica",
+      "Atletismo",
+      "Natação"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física"
+    ],
+    "gratuito": true,
+    "telefone": "(41) 3264-5000",
+    "celular": "(41) 99876-5000",
+    "whatsapp": "5541998765000",
+    "instagram": "@adfp_parana",
+    "email": "adfp@adfp.org.br",
+    "site": "https://adfp.org.br",
+    "googleMapsUrl": "https://maps.google.com/?q=ADFP+Curitiba",
+    "fonte": "https://adfp.org.br",
+    "status": "publicado",
+    "dataCadastro": "2024-03-20"
+  },
+  {
+    "id": "iniciativa-sc-florianopolis-udesc",
+    "nome": "Centro de Referência Paralímpico de Santa Catarina (UDESC / CPB)",
+    "descricao": "Programa de extensão universitária no CEFID/UDESC oferecendo atividades gratuitas e formação de atletas paralímpicos.",
+    "uf": "SC",
+    "municipio": "Florianópolis",
+    "endereco": "CEFID UDESC - Rua Pascoal Simone, 358 - Coqueiros",
+    "esportes": [
+      "Natação",
+      "Atletismo",
+      "Bocha paralímpica",
+      "Remo adaptado"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Deficiência visual",
+      "Deficiência intelectual"
+    ],
+    "gratuito": true,
+    "telefone": "(48) 3664-8600",
+    "celular": "(48) 99123-8600",
+    "whatsapp": "5548991238600",
+    "instagram": "@udesc.cefid",
+    "email": "paradesporto.cefid@udesc.br",
+    "site": "https://udesc.br/cefid",
+    "googleMapsUrl": "https://maps.google.com/?q=CEFID+UDESC+Florianopolis",
+    "fonte": "https://cpb.org.br/centros-de-referencia",
+    "status": "publicado",
+    "dataCadastro": "2024-03-22"
+  },
+  {
+    "id": "iniciativa-sc-itajai-rodasolta",
+    "nome": "Clube Roda Solta de Paradesporto",
+    "descricao": "Associação de Itajaí voltada à prática e competição em basquete sobre rodas e modalidades de pista para pessoas com deficiência motora.",
+    "uf": "SC",
+    "municipio": "Itajaí",
+    "endereco": "Rua Uruguai, 458 - Centro",
+    "esportes": [
+      "Esporte adaptado",
+      "Basquete em cadeira de rodas",
+      "Atletismo",
+      "Bocha"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física"
+    ],
+    "gratuito": true,
+    "telefone": "(47) 3348-9900",
+    "celular": "(47) 99654-9900",
+    "whatsapp": "5547996549900",
+    "instagram": "@cluberodasolta",
+    "email": "cluberodasolta@gmail.com",
+    "googleMapsUrl": "https://maps.google.com/?q=Rua+Uruguai+458+Itajai",
+    "fonte": "https://ande.org.br/clubes-vinculados",
+    "status": "publicado",
+    "dataCadastro": "2024-03-25"
+  },
+  {
+    "id": "iniciativa-rs-poa-asasepode",
+    "nome": "ASASEPODE — Associação de Pais e Amigos de Pessoas com Deficiência",
+    "descricao": "Polo gaúcho de referência na Bocha Paralímpica (todas as classes funcionais BC1, BC2, BC3 e BC4) e iniciação esportiva adaptada.",
+    "uf": "RS",
+    "municipio": "Porto Alegre",
+    "endereco": "Rua Dona Firmina, 510 - São José",
+    "esportes": [
+      "Bocha paralímpica",
+      "Esporte adaptado"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Paralisia cerebral"
+    ],
+    "gratuito": true,
+    "telefone": "(51) 3336-1234",
+    "celular": "(51) 98111-1234",
+    "whatsapp": "5551981111234",
+    "instagram": "@asasepode_rs",
+    "email": "asasepode.rs@gmail.com",
+    "googleMapsUrl": "https://maps.google.com/?q=Rua+Dona+Firmina+510+Porto+Alegre",
+    "fonte": "https://ande.org.br/clubes-vinculados",
+    "status": "publicado",
+    "dataCadastro": "2024-03-28"
+  },
+  {
+    "id": "iniciativa-df-brasilia-unb",
+    "nome": "Centro de Referência Paralímpico do Distrito Federal (UnB / CPB)",
+    "descricao": "Polo na Faculdade de Educação Física da UnB ofertando atletismo, natação e parabadminton com suporte de pesquisadores e estudantes.",
+    "uf": "DF",
+    "municipio": "Brasília",
+    "endereco": "Campus Universitário Darcy Ribeiro - Asa Norte",
+    "esportes": [
+      "Atletismo",
+      "Natação",
+      "Parabadminton",
+      "Bocha paralímpica",
+      "Goalball"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Deficiência visual",
+      "Deficiência intelectual"
+    ],
+    "gratuito": true,
+    "telefone": "(61) 3107-2500",
+    "celular": "(61) 99123-2500",
+    "whatsapp": "5561991232500",
+    "instagram": "@fef_unb",
+    "email": "paradesporto@unb.br",
+    "site": "https://fef.unb.br",
+    "googleMapsUrl": "https://maps.google.com/?q=Faculdade+de+Educacao+Fisica+UnB",
+    "fonte": "https://cpb.org.br/centros-de-referencia",
+    "status": "publicado",
+    "dataCadastro": "2024-04-01"
+  },
+  {
+    "id": "iniciativa-go-goiania-ufg",
+    "nome": "Centro de Referência Paralímpico de Goiás (UFG / CPB)",
+    "descricao": "Núcleo paradesportivo no Centro de Práticas Corporais da UFG promovendo iniciação de base no Centro-Oeste brasileiro.",
+    "uf": "GO",
+    "municipio": "Goiânia",
+    "endereco": "Campus Samambaia UFG - Av. Esperança",
+    "esportes": [
+      "Atletismo",
+      "Natação",
+      "Halterofilismo",
+      "Parataekwondo"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Deficiência visual",
+      "Deficiência intelectual"
+    ],
+    "gratuito": true,
+    "telefone": "(62) 3521-1100",
+    "celular": "(62) 99222-1100",
+    "whatsapp": "5562992221100",
+    "instagram": "@fef_ufg",
+    "email": "paradesporto.fef@ufg.br",
+    "site": "https://fef.ufg.br",
+    "googleMapsUrl": "https://maps.google.com/?q=Faculdade+de+Educacao+Fisica+UFG",
+    "fonte": "https://cpb.org.br/centros-de-referencia",
+    "status": "publicado",
+    "dataCadastro": "2024-04-05"
+  },
+  {
+    "id": "iniciativa-am-manaus-crp",
+    "nome": "Centro de Referência Paralímpico do Amazonas (SEJEL-AM / CPB)",
+    "descricao": "Maior complexo da Região Norte, funcionando na Vila Olímpica de Manaus com turmas gratuitas para diversas modalidades.",
+    "uf": "AM",
+    "municipio": "Manaus",
+    "endereco": "Vila Olímpica de Manaus - Av. Pedro Teixeira, Dom Pedro",
+    "esportes": [
+      "Atletismo",
+      "Natação",
+      "Halterofilismo",
+      "Bocha paralímpica",
+      "Tênis de mesa",
+      "Futebol de cegos"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Deficiência visual",
+      "Deficiência intelectual"
+    ],
+    "gratuito": true,
+    "telefone": "(92) 3649-4000",
+    "celular": "(92) 98400-4000",
+    "whatsapp": "5592984004000",
+    "instagram": "@sedel_am",
+    "email": "paradesporto@sedel.am.gov.br",
+    "site": "http://www.sedel.am.gov.br",
+    "googleMapsUrl": "https://maps.google.com/?q=Vila+Olimpica+de+Manaus",
+    "fonte": "https://cpb.org.br/centros-de-referencia",
+    "status": "publicado",
+    "dataCadastro": "2024-04-10"
+  },
+  {
+    "id": "iniciativa-pa-belem-allstar",
+    "nome": "All Star Rodas / Paradesporto Pará",
+    "descricao": "Associação de renome internacional em Belém no basquete sobre rodas feminino e masculino e atletismo adaptado.",
+    "uf": "PA",
+    "municipio": "Belém",
+    "endereco": "Ginásio Poliesportivo de Belém - Av. Augusto Montenegro",
+    "esportes": [
+      "Basquete em cadeira de rodas",
+      "Atletismo",
+      "Natação"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física"
+    ],
+    "gratuito": true,
+    "telefone": "(91) 3201-5000",
+    "celular": "(91) 98877-5000",
+    "whatsapp": "5591988775000",
+    "instagram": "@allstarrodas",
+    "email": "allstarrodas@gmail.com",
+    "googleMapsUrl": "https://maps.google.com/?q=Ginasio+Mangueirinho+Belem",
+    "fonte": "https://cbtm.org.br",
+    "status": "publicado",
+    "dataCadastro": "2024-04-15"
+  },
+  {
+    "id": "iniciativa-rn-natal-sadef",
+    "nome": "SADEF — Sociedade Amigos do Deficiente Físico do RN",
+    "descricao": "Entidade de referência no Rio Grande do Norte com multicampeões no halterofilismo paralímpico, atletismo e natação.",
+    "uf": "RN",
+    "municipio": "Natal",
+    "endereco": "Av. Prudente de Morais, 2200 - Lagoa Nova",
+    "esportes": [
+      "Halterofilismo paralímpico",
+      "Atletismo",
+      "Natação",
+      "Bocha"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física"
+    ],
+    "gratuito": true,
+    "telefone": "(84) 3206-8800",
+    "celular": "(84) 99111-8800",
+    "whatsapp": "5584991118800",
+    "instagram": "@sadefrn",
+    "email": "sadefrn@gmail.com",
+    "googleMapsUrl": "https://maps.google.com/?q=Av+Prudente+de+Morais+2200+Natal",
+    "fonte": "https://cpb.org.br",
+    "status": "publicado",
+    "dataCadastro": "2024-04-20"
+  },
+  {
+    "id": "iniciativa-es-vitoria-sesport",
+    "nome": "Centro de Referência Paralímpico do Espírito Santo (SESPORT / CPB)",
+    "descricao": "Polo no Centro de Treinamento Jayme Navarro de Carvalho com turmas e programas públicos de fomento paradesportivo.",
+    "uf": "ES",
+    "municipio": "Vitória",
+    "endereco": "Rua Coronel Schwab Filho, Bento Ferreira",
+    "esportes": [
+      "Atletismo",
+      "Natação",
+      "Halterofilismo",
+      "Bocha paralímpica",
+      "Basquete em cadeira de rodas"
+    ],
+    "deficienciasAtendidas": [
+      "Deficiência física",
+      "Deficiência visual",
+      "Deficiência intelectual"
+    ],
+    "gratuito": true,
+    "telefone": "(27) 3636-7000",
+    "celular": "(27) 99765-7000",
+    "whatsapp": "5527997657000",
+    "instagram": "@sesportes",
+    "email": "paradesporto@sesport.es.gov.br",
+    "site": "https://sesport.es.gov.br",
+    "googleMapsUrl": "https://maps.google.com/?q=Sesport+Vitoria+Bento+Ferreira",
+    "fonte": "https://cpb.org.br/centros-de-referencia",
+    "status": "publicado",
+    "dataCadastro": "2024-04-25"
+  }
+]

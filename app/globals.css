@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --color-brand-petrol: #0f2d4a;
+  --color-brand-petrol-dark: #091a2b;
+  --color-brand-accent: #059669;
+  --color-brand-accent-hover: #047857;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Transições funcionais suaves */
+.transition-functional {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 180ms;
+}
+
+/* Custom scrollbar para listas */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Polígonos SVG interativos */
+.map-polygon {
+  cursor: pointer;
+  outline: none;
+  transition: fill 0.15s ease, stroke 0.15s ease, opacity 0.15s ease, transform 0.15s ease;
+}
+
+.map-polygon:focus-visible {
+  stroke: #0284c7 !important;
+  stroke-width: 2.5px !important;
+}
