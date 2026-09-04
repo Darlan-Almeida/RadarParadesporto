@@ -28,7 +28,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Vila+Olimpica+Parahyba+Joao+Pessoa",
     "fonte": "https://paraiba.pb.gov.br/noticias/paradesporto",
     "status": "publicado",
-    "dataCadastro": "2024-01-10"
+    "dataCadastro": "2024-01-10",
+    "anoFundacao": "2015",
+    "historiaEImpacto": "Fundado por educadores físicos e paratletas paraibanos, o IPP transformou a Vila Olímpica Parahyba no maior polo de iniciação e alto rendimento paradesportivo da Paraíba, revelando atletas convocados para as seleções brasileiras de atletismo e parataekwondo.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:30",
+    "responsavelTecnico": "Parceria Governo da Paraíba / SEEL PB"
   },
   {
     "id": "iniciativa-pb-jp-apace",
@@ -50,12 +54,17 @@
     "telefone": "(83) 3241-1500",
     "celular": "(83) 99123-4500",
     "whatsapp": "5583991234500",
-    "instagram": "@apace_paraiba",
+    "instagram": "@apace_pb",
     "email": "apace.pb@gmail.com",
+    "site": "https://apacepb.com.br",
     "googleMapsUrl": "https://maps.google.com/?q=Rua+das+Trincheiras+450+Joao+Pessoa",
     "fonte": "https://cbdv.org.br/clubes-filiados",
     "status": "publicado",
-    "dataCadastro": "2024-01-15"
+    "dataCadastro": "2024-01-15",
+    "anoFundacao": "1984",
+    "historiaEImpacto": "Com mais de 40 anos de atuação ininterrupta, a APACE é tricampeã brasileira de Futebol de 5 e referência nacional na promoção de autonomia, educação Braille e treinamento paralímpico para pessoas com deficiência visual.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "Filiada à CBDV (Confederação Brasileira de Desportos de Deficientes Visuais)"
   },
   {
     "id": "iniciativa-pb-cg-crp",
@@ -88,7 +97,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Parque+da+Liberdade+Campina+Grande",
     "fonte": "https://cpb.org.br/centros-de-referencia",
     "status": "publicado",
-    "dataCadastro": "2024-01-20"
+    "dataCadastro": "2024-01-20",
+    "anoFundacao": "2021",
+    "historiaEImpacto": "Criado em parceria com o Comitê Paralímpico Brasileiro, atende gratuitamente mais de 120 crianças e adolescentes do Agreste Paraibano, integrando avaliação motora, iniciação desportiva e participação em festivais paralímpicos nacionais.",
+    "horariosAtendimento": "Terças e Quintas, das 08:00 às 11:30 e 14:00 às 17:00",
+    "responsavelTecnico": "Chancelado pelo Comitê Paralímpico Brasileiro (CPB / SEJEL)"
   },
   {
     "id": "iniciativa-pb-patos-ifpb",
@@ -113,7 +126,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=IFPB+Campus+Patos",
     "fonte": "https://ifpb.edu.br",
     "status": "publicado",
-    "dataCadastro": "2024-02-01"
+    "dataCadastro": "2024-02-01",
+    "anoFundacao": "2019",
+    "historiaEImpacto": "Projeto de extensão acadêmica do IFPB Patos voltado a desmistificar o esporte adaptado no interior da Paraíba, organizando festivais de vivência paradesportiva para escolas públicas da região.",
+    "horariosAtendimento": "Quartas e Sextas, das 14:00 às 17:00",
+    "responsavelTecnico": "Coordenação de Extensão IFPB Campus Patos"
   },
   {
     "id": "iniciativa-sp-sp-ctpb",
@@ -143,13 +160,17 @@
     "telefone": "(11) 2344-9900",
     "celular": "(11) 97654-3210",
     "whatsapp": "5511976543210",
-    "instagram": "@cpboficial",
+    "instagram": "@brasilparalimpico",
     "email": "contato@cpb.org.br",
     "site": "https://cpb.org.br",
     "googleMapsUrl": "https://maps.google.com/?q=Centro+de+Treinamento+Paralimpico+Brasileiro",
     "fonte": "https://cpb.org.br/ct-paralimpico",
     "status": "publicado",
-    "dataCadastro": "2024-01-05"
+    "dataCadastro": "2024-01-05",
+    "anoFundacao": "2016",
+    "historiaEImpacto": "Inaugurado em 2016 com 95 mil metros quadrados de área construída, o CT Paralímpico é a sede oficial de treinos das seleções brasileiras para os Jogos Paralímpicos e abriga a Escola Paralímpica de Esportes gratuita.",
+    "horariosAtendimento": "Diariamente, das 07:00 às 20:00",
+    "responsavelTecnico": "Comitê Paralímpico Brasileiro (CPB)"
   },
   {
     "id": "iniciativa-sp-sp-add",
@@ -170,13 +191,17 @@
     ],
     "gratuito": true,
     "telefone": "(11) 3662-3000",
-    "instagram": "@add_oficial",
+    "instagram": "@addassociacao",
     "email": "contato@add.org.br",
     "site": "https://add.org.br",
     "googleMapsUrl": "https://maps.google.com/?q=Associacao+Desportiva+para+Deficientes+ADD",
     "fonte": "https://add.org.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-08"
+    "dataCadastro": "2024-01-08",
+    "anoFundacao": "1996",
+    "historiaEImpacto": "Fundada por Steven Dubner e Eliane Miada, a ADD atendeu mais de 25 mil pessoas com deficiência ao longo de sua história através do programa 'ADD Esporte' e da equipe multipremiada de basquete Magic Hands.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:30 às 17:30",
+    "responsavelTecnico": "ADD Brasil"
   },
   {
     "id": "iniciativa-sp-sjc-athlon",
@@ -188,6 +213,7 @@
     "esportes": [
       "Atletismo",
       "Natação",
+      "Goalball",
       "Ciclismo paralímpico",
       "Triatlo paralímpico"
     ],
@@ -204,7 +230,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Instituto+Athlon+Sao+Jose+dos+Campos",
     "fonte": "https://institutoathlon.org.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-12"
+    "dataCadastro": "2024-01-12",
+    "anoFundacao": "2011",
+    "historiaEImpacto": "Campeão brasileiro de Goalball e polo de revelação de talentos paralímpicos de São José dos Campos, atuando desde a formação básica em escolas até competições internacionais.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 18:00",
+    "responsavelTecnico": "Instituto Athlon SJC"
   },
   {
     "id": "iniciativa-sp-campinas-apc",
@@ -228,7 +258,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Praca+Esportiva+Dom+Bosco+Campinas",
     "fonte": "https://apcampinas.org.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-18"
+    "dataCadastro": "2024-01-18",
+    "anoFundacao": "2008",
+    "historiaEImpacto": "Atua na Praça Esportiva Dom Bosco no Taquaral oferecendo treinamentos orientados por técnicos credenciados pelo CPB para atletismo e tênis de mesa.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "APC Campinas"
   },
   {
     "id": "iniciativa-rj-rj-ibc",
@@ -254,7 +288,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Instituto+Benjamin+Constant+Rio+de+Janeiro",
     "fonte": "https://gov.br/ibc",
     "status": "publicado",
-    "dataCadastro": "2024-01-11"
+    "dataCadastro": "2024-01-11",
+    "anoFundacao": "1854",
+    "historiaEImpacto": "Fundado em 1854 pelo Imperador D. Pedro II, o IBC é o centro pioneiro nas Américas em educação para pessoas cegas e berço de grandes campeões paralímpicos de futebol de cegos e judô.",
+    "horariosAtendimento": "Segunda a Sexta, das 07:30 às 17:00",
+    "responsavelTecnico": "Departamento de Educação Física do IBC"
   },
   {
     "id": "iniciativa-rj-rj-vasco",
@@ -280,7 +318,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Estadio+Sao+Januario+Rio+de+Janeiro",
     "fonte": "https://vasco.com.br/paradesporto",
     "status": "publicado",
-    "dataCadastro": "2024-01-14"
+    "dataCadastro": "2024-01-14",
+    "anoFundacao": "2001",
+    "historiaEImpacto": "Pioneiro entre os grandes clubes do futebol brasileiro na criação de uma divisão exclusiva para paratletas, com múltiplos títulos nacionais no futebol de 7 para paralisados cerebrais.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "Club de Regatas Vasco da Gama"
   },
   {
     "id": "iniciativa-rj-niteroi-ande",
@@ -299,13 +341,17 @@
     ],
     "gratuito": true,
     "telefone": "(21) 2620-1100",
-    "instagram": "@ande_oficial",
+    "instagram": "@andenarede",
     "email": "contato@ande.org.br",
     "site": "https://ande.org.br",
     "googleMapsUrl": "https://maps.google.com/?q=ANDE+Niteroi",
     "fonte": "https://ande.org.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-16"
+    "dataCadastro": "2024-01-16",
+    "anoFundacao": "1975",
+    "historiaEImpacto": "Fundada em 1975, a ANDE é a entidade nacional responsável por gerenciar a bocha paralímpica no Brasil, modalidade na qual o país é potência mundial com dezenas de medalhas em Jogos Paralímpicos.",
+    "horariosAtendimento": "Segunda a Sexta, das 09:00 às 17:00",
+    "responsavelTecnico": "ANDE Brasil"
   },
   {
     "id": "iniciativa-mg-uberlandia-cddu",
@@ -332,7 +378,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Praia+Clube+Uberlandia",
     "fonte": "https://praiaclube.org.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-09"
+    "dataCadastro": "2024-01-09",
+    "anoFundacao": "2002",
+    "historiaEImpacto": "Uma das parcerias mais vitoriosas do paradesporto mundial. Mantém o principal polo de halterofilismo paralímpico do Brasil, forming medalhistas paralímpicos mundiais e recordistas continentais.",
+    "horariosAtendimento": "Segunda a Sexta, das 07:00 às 18:00",
+    "responsavelTecnico": "Parceria CDDU / Praia Clube / FUTEL"
   },
   {
     "id": "iniciativa-mg-bh-cte",
@@ -359,7 +409,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=CTE+UFMG+Belo+Horizonte",
     "fonte": "https://cte.ufmg.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-13"
+    "dataCadastro": "2024-01-13",
+    "anoFundacao": "2016",
+    "historiaEImpacto": "Estrutura científica de ponta da UFMG em Belo Horizonte que combina acompanhamento médico, fisiológico e nutricional a paratletas de Minas Gerais.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 18:00",
+    "responsavelTecnico": "EEFFTO / UFMG"
   },
   {
     "id": "iniciativa-df-bsb-cetefe",
@@ -387,7 +441,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=CETEFE+Brasilia",
     "fonte": "https://cetefe.org.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-07"
+    "dataCadastro": "2024-01-07",
+    "anoFundacao": "1994",
+    "historiaEImpacto": "Entidade de referência na Capital Federal que desenvolve programas de estimulação psicomotora, hidroterapia e equipes competitivas paralímpicas no Setor de Clubes Sul.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "CETEFE Brasília"
   },
   {
     "id": "iniciativa-pr-curitiba-apac",
@@ -413,7 +471,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Praca+Oswaldo+Cruz+Curitiba",
     "fonte": "https://curitiba.pr.gov.br/esporte",
     "status": "publicado",
-    "dataCadastro": "2024-01-17"
+    "dataCadastro": "2024-01-17",
+    "anoFundacao": "2005",
+    "historiaEImpacto": "Com centro de treinos na Praça Oswaldo Cruz em Curitiba, a APAC é destaque nacional na esgrima em cadeira de rodas e natação adaptada no estado do Paraná.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "APAC / SMELJ Curitiba"
   },
   {
     "id": "iniciativa-sc-bc-afadefi",
@@ -433,12 +495,17 @@
     ],
     "gratuito": true,
     "telefone": "(47) 3363-2200",
-    "instagram": "@afadefi_bc",
+    "instagram": "@afadefibc",
     "email": "contato@afadefi.org.br",
+    "site": "https://afadefi.com.br",
     "googleMapsUrl": "https://maps.google.com/?q=AFADEFI+Balneario+Camboriu",
-    "fonte": "https://afadefi.org.br",
+    "fonte": "https://afadefi.com.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-19"
+    "dataCadastro": "2024-01-19",
+    "anoFundacao": "2002",
+    "historiaEImpacto": "Fundada em 2002, combina assistência multidisciplinar às famílias com um vitorioso programa de bocha paralímpica e atletismo em Balneário Camboriú.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "AFADEFI / FME Balneário Camboriú"
   },
   {
     "id": "iniciativa-rs-poa-gnu",
@@ -464,7 +531,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Gremio+Nautico+Uniao+Porto+Alegre",
     "fonte": "https://gnu.com.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-21"
+    "dataCadastro": "2024-01-21",
+    "anoFundacao": "2006",
+    "historiaEImpacto": "Possui uma das estruturas aquáticas mais acessíveis do Rio Grande do Sul, com suporte completo para atletas paralímpicos de remo e natação.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 18:00",
+    "responsavelTecnico": "Departamento Paradesportivo GNU"
   },
   {
     "id": "iniciativa-ba-ssa-abadefi",
@@ -488,7 +559,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=ABADEFI+Salvador",
     "fonte": "https://abadefi.org.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-22"
+    "dataCadastro": "2024-01-22",
+    "anoFundacao": "1987",
+    "historiaEImpacto": "Entidade histórica da Bahia que promove treinamentos desportivos e inclusão social em Salvador há quase quatro décadas.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 16:30",
+    "responsavelTecnico": "ABADEFI Salvador"
   },
   {
     "id": "iniciativa-pe-recife-apa",
@@ -514,7 +589,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Centro+Esportivo+Santos+Dumont+Recife",
     "fonte": "https://pe.gov.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-23"
+    "dataCadastro": "2024-01-23",
+    "anoFundacao": "2010",
+    "historiaEImpacto": "Sediada no Centro Esportivo Santos Dumont no Recife, a APA revelou velocistas paralímpicos de destaque internacional no atletismo para cego e físico.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "APA Pernambuco"
   },
   {
     "id": "iniciativa-ce-fortaleza-adesul",
@@ -536,10 +615,15 @@
     "telefone": "(85) 3101-4400",
     "instagram": "@adesuloficial",
     "email": "adesul.ceara@gmail.com",
+    "site": "https://adesul.org",
     "googleMapsUrl": "https://maps.google.com/?q=Centro+de+Formacao+Olimpica+Fortaleza",
     "fonte": "https://esporte.ce.gov.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-24"
+    "dataCadastro": "2024-01-24",
+    "anoFundacao": "2014",
+    "historiaEImpacto": "Executora do renomado programa 'Esporte Sem Limites' no Centro de Formação Olímpica (CFO) do Ceará, impulsionando a participação cearense em competições paralímpicas nacionais.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "ADESUL Ceará"
   },
   {
     "id": "iniciativa-pa-belem-apea",
@@ -565,7 +649,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=UEPA+Campus+III+Belem",
     "fonte": "https://uepa.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-25"
+    "dataCadastro": "2024-01-25",
+    "anoFundacao": "2012",
+    "historiaEImpacto": "Polo de referência aquática e de atletismo no Pará, atuando em parceria com a Universidade do Estado do Pará para atendimento comunitário gratuito.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "APEA / UEPA Belém"
   },
   {
     "id": "iniciativa-am-manaus-aadef",
@@ -590,7 +678,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Vila+Olimpica+de+Manaus",
     "fonte": "https://am.gov.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-26"
+    "dataCadastro": "2024-01-26",
+    "anoFundacao": "1998",
+    "historiaEImpacto": "Pioneira no esporte adaptado no estado do Amazonas, mantendo treinos regulares de natação e atletismo na Vila Olímpica de Manaus.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 16:30",
+    "responsavelTecnico": "AADEF Amazonas"
   },
   {
     "id": "iniciativa-go-goiania-adfego",
@@ -611,10 +703,15 @@
     "telefone": "(62) 3218-1000",
     "instagram": "@adfego_oficial",
     "email": "contato@adfego.org.br",
+    "site": "https://adfego.org.br",
     "googleMapsUrl": "https://maps.google.com/?q=ADFEGO+Goiania",
     "fonte": "https://adfego.org.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-27"
+    "dataCadastro": "2024-01-27",
+    "anoFundacao": "1981",
+    "historiaEImpacto": "Fundada em 1981, a ADFEGO é uma das entidades mais tradicionais do Centro-Oeste na reabilitação social, esportiva e profissional de pessoas com deficiência.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "ADFEGO Goiânia"
   },
   {
     "id": "iniciativa-rn-natal-sadef",
@@ -636,10 +733,15 @@
     "telefone": "(84) 3206-8800",
     "instagram": "@sadefrn",
     "email": "sadef.rn@gmail.com",
+    "site": "https://sadefrn.org.br",
     "googleMapsUrl": "https://maps.google.com/?q=CAIC+Lagoa+Nova+Natal",
-    "fonte": "https://sadefrn.com.br",
+    "fonte": "https://sadefrn.org.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-28"
+    "dataCadastro": "2024-01-28",
+    "anoFundacao": "1997",
+    "historiaEImpacto": "Detentora de dezenas de medalhas paralímpicas internacionais, a SADEF-RN é o maior centro de desenvolvimento de atletismo e natação adaptada do Rio Grande do Norte.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:30",
+    "responsavelTecnico": "SADEF RN"
   },
   {
     "id": "iniciativa-es-vitoria-acp",
@@ -664,7 +766,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Saldanha+da+Gama+Vitoria",
     "fonte": "https://vitoria.es.gov.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-29"
+    "dataCadastro": "2024-01-29",
+    "anoFundacao": "2013",
+    "historiaEImpacto": "Pioneira no Espírito Santo no projeto de Vela Adaptada na Baía de Vitória, proporcionando liberdade náutica e rendimento paradesportivo.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "ACP Espírito Santo"
   },
   {
     "id": "iniciativa-ms-campo-grande-addms",
@@ -688,7 +794,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=ADD+MS+Campo+Grande",
     "fonte": "https://ms.gov.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-30"
+    "dataCadastro": "2024-01-30",
+    "anoFundacao": "2004",
+    "historiaEImpacto": "Fomenta equipes competitivas de basquete em cadeira de rodas em Campo Grande com apoio das secretarias municipais e estaduais.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "ADD-MS Campo Grande"
   },
   {
     "id": "iniciativa-mt-cuiaba-amdefi",
@@ -713,7 +823,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Complexo+Dom+Aquino+Cuiaba",
     "fonte": "https://cuiaba.mt.gov.br",
     "status": "publicado",
-    "dataCadastro": "2024-01-31"
+    "dataCadastro": "2024-01-31",
+    "anoFundacao": "2009",
+    "historiaEImpacto": "Centro cuiabano de inclusão esportiva com turmas de atletismo e bocha paralímpica no Complexo Dom Aquino.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "AMDEFI Mato Grosso"
   },
   {
     "id": "iniciativa-al-maceio-adefal",
@@ -734,10 +848,15 @@
     "telefone": "(82) 3217-7900",
     "instagram": "@adefal_oficial",
     "email": "contato@adefal.org.br",
+    "site": "https://adefal.org.br",
     "googleMapsUrl": "https://maps.google.com/?q=ADEFAL+Maceio",
     "fonte": "https://adefal.org.br",
     "status": "publicado",
-    "dataCadastro": "2024-02-02"
+    "dataCadastro": "2024-02-02",
+    "anoFundacao": "1981",
+    "historiaEImpacto": "Uma das maiores instituições filantrópicas de Alagoas, reconhecida nacionalmente por integrar tratamento em saúde e reabilitação esportiva.",
+    "horariosAtendimento": "Segunda a Sexta, das 07:30 às 17:00",
+    "responsavelTecnico": "ADEFAL Alagoas"
   },
   {
     "id": "iniciativa-se-aracaju-adefise",
@@ -762,7 +881,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=ADEFISE+Aracaju",
     "fonte": "https://se.gov.br",
     "status": "publicado",
-    "dataCadastro": "2024-02-03"
+    "dataCadastro": "2024-02-03",
+    "anoFundacao": "2000",
+    "historiaEImpacto": "Atua há mais de duas décadas em Aracaju com apoio a paratletas sergipanos no atletismo e bocha paralímpica.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "ADEFISE Sergipe"
   },
   {
     "id": "iniciativa-ma-saoluis-amap",
@@ -788,7 +911,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=São+Luis+Maranhao",
     "fonte": "https://ma.gov.br",
     "status": "publicado",
-    "dataCadastro": "2024-02-04"
+    "dataCadastro": "2024-02-04",
+    "anoFundacao": "2015",
+    "historiaEImpacto": "Fomenta escolinhas de goalball e atletismo no Maranhão para jovens com deficiência visual e motora.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "AMAP Maranhão"
   },
   {
     "id": "iniciativa-pi-teresina-adefipi",
@@ -812,7 +939,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Teresina+Piaui",
     "fonte": "https://pi.gov.br",
     "status": "publicado",
-    "dataCadastro": "2024-02-05"
+    "dataCadastro": "2024-02-05",
+    "anoFundacao": "1992",
+    "historiaEImpacto": "Polo do esporte adaptado piauiense com turmas no bairro Vermelha em Teresina.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "ADEFIPI Piauí"
   },
   {
     "id": "iniciativa-to-palmas-apto",
@@ -836,7 +967,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Palmas+Tocantins",
     "fonte": "https://to.gov.br",
     "status": "publicado",
-    "dataCadastro": "2024-02-06"
+    "dataCadastro": "2024-02-06",
+    "anoFundacao": "2016",
+    "historiaEImpacto": "Desenvolve núcleos de iniciação paradesportiva em Palmas e capacita professores de educação física das redes municipais.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "APTO Tocantins"
   },
   {
     "id": "iniciativa-ro-portovelho-arp",
@@ -860,7 +995,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Porto+Velho+Rondonia",
     "fonte": "https://ro.gov.br",
     "status": "publicado",
-    "dataCadastro": "2024-02-07"
+    "dataCadastro": "2024-02-07",
+    "anoFundacao": "2014",
+    "historiaEImpacto": "Atua no Ginásio Claudio Coutinho em Porto Velho para inserção de atletas rondonienses nas Paralimpíadas Escolares.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "ARP Rondônia"
   },
   {
     "id": "iniciativa-ac-riobranco-adefac",
@@ -883,7 +1022,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Rio+Branco+Acre",
     "fonte": "https://ac.gov.br",
     "status": "publicado",
-    "dataCadastro": "2024-02-08"
+    "dataCadastro": "2024-02-08",
+    "anoFundacao": "1995",
+    "historiaEImpacto": "Referência acreana no acolhimento e fomento à iniciação paradesportiva em Rio Branco.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "ADEFAC Acre"
   },
   {
     "id": "iniciativa-ap-macapa-aap",
@@ -907,7 +1050,11 @@
     "googleMapsUrl": "https://maps.google.com/?q=Macapa+Amapa",
     "fonte": "https://ap.gov.br",
     "status": "publicado",
-    "dataCadastro": "2024-02-09"
+    "dataCadastro": "2024-02-09",
+    "anoFundacao": "2013",
+    "historiaEImpacto": "Mantém escolinhas gratuitas no Complexo do Glicério em Macapá.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "AAP Amapá"
   },
   {
     "id": "iniciativa-rr-boavista-arp",
@@ -931,6 +1078,10 @@
     "googleMapsUrl": "https://maps.google.com/?q=Boa+Vista+Roraima",
     "fonte": "https://rr.gov.br",
     "status": "publicado",
-    "dataCadastro": "2024-02-10"
+    "dataCadastro": "2024-02-10",
+    "anoFundacao": "2017",
+    "historiaEImpacto": "Atua na Vila Olímpica Roberto Marinho em Boa Vista para desenvolvimento do esporte adaptado de base.",
+    "horariosAtendimento": "Segunda a Sexta, das 08:00 às 17:00",
+    "responsavelTecnico": "ARP Roraima"
   }
 ]

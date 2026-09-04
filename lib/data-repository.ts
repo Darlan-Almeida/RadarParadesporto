@@ -3,7 +3,7 @@ import { UFS_BRASIL, LISTA_UFS } from './constants';
 import seedData from '@/data/iniciativas.json';
 import { normalizeText } from './utils';
 
-const STORAGE_KEY = 'radar_pcd_iniciativas_prod_v2';
+const STORAGE_KEY = 'radar_pcd_iniciativas_prod_v4';
 
 class DataRepository {
   private inMemoryData: Iniciativa[] = [];

@@ -15,6 +15,8 @@ import {
   CheckCircle2,
   MessageSquare,
   Navigation,
+  Info,
+  ShieldCheck,
 } from 'lucide-react';
 import { InstagramIcon } from '@/components/InstagramIcon';
 
@@ -118,6 +120,41 @@ export function InitiativeCard({ iniciativa }: InitiativeCardProps) {
             ))}
           </div>
         </div>
+
+        {/* História, Fundação e Impacto Social */}
+        {(iniciativa.historiaEImpacto || iniciativa.anoFundacao || iniciativa.horariosAtendimento || iniciativa.responsavelTecnico) && (
+          <div className="mt-3.5 p-3.5 bg-slate-50/90 rounded-xl border border-slate-200/90 space-y-2">
+            <div className="flex items-center justify-between gap-2 border-b border-slate-200/60 pb-1.5">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#0F2A4A] flex items-center gap-1">
+                <Info className="w-3.5 h-3.5 text-blue-700" /> Sobre a Associação & Histórico
+              </span>
+              {iniciativa.anoFundacao && (
+                <span className="text-[10px] font-bold text-blue-900 bg-blue-100/80 px-2 py-0.5 rounded border border-blue-200">
+                  Fundada em {iniciativa.anoFundacao}
+                </span>
+              )}
+            </div>
+
+            {iniciativa.historiaEImpacto && (
+              <p className="text-xs text-slate-700 leading-relaxed italic">
+                "{iniciativa.historiaEImpacto}"
+              </p>
+            )}
+
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-slate-600 pt-1 border-t border-slate-200/40">
+              {iniciativa.horariosAtendimento && (
+                <span className="flex items-center gap-1 font-medium">
+                  <Clock className="w-3 h-3 text-slate-500" /> {iniciativa.horariosAtendimento}
+                </span>
+              )}
+              {iniciativa.responsavelTecnico && (
+                <span className="flex items-center gap-1 font-medium text-emerald-800">
+                  <ShieldCheck className="w-3 h-3 text-emerald-600" /> {iniciativa.responsavelTecnico}
+                </span>
+              )}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Seção de Contatos e Ações Diretas */}

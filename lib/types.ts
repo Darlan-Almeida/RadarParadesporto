@@ -30,6 +30,10 @@ export interface Iniciativa {
   fonte: string;            // URL ou menção da fonte pública/oficial
   status: StatusIniciativa; // 'publicado' | 'pendente' | 'rejeitado'
   dataCadastro?: string;    // Data ISO de submissão
+  anoFundacao?: string;     // Ano de fundação (ex: "1996")
+  historiaEImpacto?: string; // História detalhada, missão e conquistas da associação
+  horariosAtendimento?: string; // Horários de atendimento/treino (ex: "Segunda a Sexta, 08h às 17h")
+  responsavelTecnico?: string; // Parcerias / Coordenação técnica (ex: "Parceria CPB / SEJEL")
 }
 
 export type IniciativaInput = Omit<Iniciativa, 'id' | 'status' | 'dataCadastro'>;
