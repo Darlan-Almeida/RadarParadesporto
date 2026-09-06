@@ -40,14 +40,6 @@ A solução foi desenvolvida com foco em **alta performance, seriedade instituci
 
 ## 🧭 Navegação em 3 Camadas (Zero Reload)
 
-```mermaid
-flowchart LR
-    A[Camada 1: Brasil] -->|Clique na UF| B[Camada 2: Estado]
-    B -->|Clique no Município / Lista| C[Camada 3: Cidade]
-    C -->|Breadcrumb / Voltar| B
-    B -->|Breadcrumb / Voltar| A
-```
-
 1. **Camada 1 — Brasil**:
    - Mapa SVG nacional interativo com as 26 UFs + DF.
    - Destaque visual para estados com iniciativas registradas.
