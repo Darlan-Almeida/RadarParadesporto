@@ -3,6 +3,8 @@ import { GeoFeatureProperties } from './types';
 import { UFS_BRASIL } from './constants';
 
 export type BrazilGeoJSON = FeatureCollection<Geometry, GeoFeatureProperties>;
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+const withBasePath = (path: string) => `${basePath}${path}`;
 
 class GeoService {
   private cache = new Map<string, BrazilGeoJSON>();
@@ -13,7 +15,7 @@ class GeoService {
     }
 
     try {
-      const res = await fetch('/geo/brazil-ufs.json');
+      const res = await fetch(withBasePath('/geo/brazil-ufs.json'));
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data: BrazilGeoJSON = await res.json();
       this.cache.set('BR', data);
@@ -47,7 +49,7 @@ class GeoService {
     }
 
     try {
-      const res = await fetch(`/geo/municipios-${upperUF.toLowerCase()}.json`);
+      const res = await fetch(withBasePath(`/geo/municipios-${upperUF.toLowerCase()}.json`));
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data: BrazilGeoJSON = await res.json();
       this.cache.set(key, data);

@@ -131,6 +131,17 @@ npm run start
 
 ---
 
+## 🌐 Publicação no GitHub Pages (`github.io`)
+
+1. No GitHub, acesse **Settings → Pages** e selecione **Source: GitHub Actions**.
+2. Faça commit das configurações deste repositório (Next.js estático + workflow).
+3. Envie para a branch `main` para disparar o workflow **Deploy to GitHub Pages**.
+4. Após a execução, acesse:
+   - **https://darlan-almeida.github.io/RadarParadesporto/**
+5. Se notar assets quebrados (CSS/imagens/dados), valide `basePath` e o prefixo usado para recursos públicos e rode novo deploy.
+
+---
+
 ## 🗺️ Roadmap para Produção
 
 - [ ] **Persistência Relacional & Geoespacial**: Migração da camada de dados para PostgreSQL com extensão **PostGIS** para consultas por raio quilométrico (ex.: "Encontrar iniciativas a até 20km da minha localização").
